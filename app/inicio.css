@@ -166,3 +166,9 @@ a {
 .post ol li:before {
   content: none;
 }
+
+.post-body img{
+  border-radius: 5px;
+  width: 150px;
+}
+
