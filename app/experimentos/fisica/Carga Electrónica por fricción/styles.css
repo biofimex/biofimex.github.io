@@ -172,13 +172,13 @@ a {
 }
 
 .fondo{
-  background: #34B15A;
+  background: #5cc9ff;
 }
 
 .oval {
   width: 60%;
   height: 300px;
-  background-color: #34B15A;
+  background-color: #5cc9ff;
   -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -198,7 +198,7 @@ a {
 }
 
 .boton{
-  background: #34B15A;
+  background: #5cc9ff;
   color: #fff;
   width: 200px;
   height: 40px;
@@ -206,7 +206,7 @@ a {
 }
 
 .tiitulos{
-  color: #34B15A;
+  color: #5cc9ff;
 }
 
 
