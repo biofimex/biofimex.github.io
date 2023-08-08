@@ -1,0 +1,23 @@
+.home .imagee{
+  flex:1 1 40rem;
+}
+
+.home .imagee img{
+  width:100%;
+  animation:float 3s linear infinite;
+}
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+}
+
+
+
+
+
+
