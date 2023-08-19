@@ -184,14 +184,8 @@ a {
 }
 
 
-.jeader {
+.jeader h1 {
   background: #62b134;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.jeaderr {
-  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
