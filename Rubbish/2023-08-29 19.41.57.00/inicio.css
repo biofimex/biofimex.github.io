@@ -202,7 +202,7 @@ a {
 
 
 swiper-container {
-  width: 80%;
+  width: 85%;
   height: 320px;
 }
 
@@ -211,7 +211,7 @@ swiper-slide {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
 }
 

@@ -202,7 +202,7 @@ a {
 
 
 swiper-container {
-  width: 80%;
+  width: 85%;
   height: 320px;
 }
 
@@ -211,12 +211,12 @@ swiper-slide {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  font-size: 16px;
+  
   color: #fff;
 }
 
 swiper-slide:nth-child(1n) {
-  background-color: rgb(3, 82, 0);
+  background-color: rgb(206, 17, 17);
 }
 
 swiper-slide:nth-child(2n) {
@@ -254,8 +254,3 @@ swiper-slide:nth-child(9n) {
 swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
 }
-
-
-
-
-
