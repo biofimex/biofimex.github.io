@@ -1,0 +1,3443 @@
+<!--Base Structure Template here-->
+<html>
+
+<!-- Mirrored from smartfun.club/category/strategy by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2023 13:47:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Demo - Smartfun.club - by MarketJS </title>
+	<meta name="description" content="">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+	
+	
+	<!-- TO BE CHANGED -->
+	<!--<link rel="shortcut icon" href="">-->
+	
+	<style>	
+		/* Base Theme Template here */
+/*
+@font-face {
+    font-family: coolcrayon;
+    src: url(/static/fonts/coolcrayon.ttf);
+}
+*/
+html, body, #sticky-container {
+	margin:0;
+	height: 100%; 
+	color:#000000;
+	background: #e3f2fc; /*#92e5f0*/
+	font-size:1.2em;
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+#sticky-container { height: auto; min-height: 100%; }
+#sticky-footer { clear: both; position: relative; z-index: 10; }
+
+h1 {
+	padding:0;
+	margin:0;
+}
+
+h2 {
+	font-size:1.2em;
+	padding:0;
+	margin:0;
+}
+
+h3 {
+	font-size:0.8em;
+	padding:0;
+	margin:0;
+}
+
+a {
+	color:#128ccb;
+}
+
+a.hover {
+	color:#128ccb;
+}
+
+
+.button {
+	font-size:1em;
+	font-weight:normal;
+	
+	-moz-border-radius:0.5em;
+	-webkit-border-radius:0.5em;
+	border-radius:0.5em;
+	
+	padding:0.5em 1em;
+	text-decoration:none;	
+		
+	color:#ffffff;	
+	
+	background-color:#fbd305;
+		
+	display:inline-block;	
+	
+}.button:hover {	
+	background-color:#fbd305;		
+	color:#ffffff;	
+	text-decoration:none !important;	
+}.button:active {
+	position:relative;
+	top:0.05em;
+}
+
+.button-large {
+	font-size:2em;
+}
+
+input[type=submit] {
+    border:none;
+}
+
+.valid {
+	font-size:0.8em;
+	color:#1bdc24;	
+}
+
+.error {
+	font-size:0.8em;
+	color:#ea1313;
+	margin-top:0.2em;
+	margin-bottom:0.5em;
+	display:block;
+}
+
+.tip {
+	color:#ccc;
+	font-size:0.8em;
+}
+
+.borderless {
+	border:none !important; /* IMPORTANT */
+}
+
+.pull-right {
+	text-align:right;
+}
+
+.padding-side {
+	padding:0em 1em 0em 1em;
+}
+
+.padding-side-small {
+	padding:0em 0.5em 0em 0.5em;
+}
+
+.padding-side-medium {
+	padding:0em 1.5em 0em 1.5em;
+}
+
+.container {
+	clear: both;
+	margin-left: 0em;
+	margin-right: 0em; /* 0em 11em 0em 11em this is where the skyscraper ads happen*/
+	margin-top:0;
+	margin-bottom:0;
+	border-left:0px solid #cccccc;
+	border-right:0px solid #cccccc;
+	min-height:100%;
+}	
+
+.container-shadow {
+    -webkit-box-shadow: 5px 0 5px -2px #cccccc, -5px 0 5px -2px #cccccc;
+    		box-shadow: 5px 0 5px -2px #cccccc, -5px 0 5px -2px #cccccc;	
+}
+
+.overlay-container-basic {
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10004;	
+	display:none;	
+}
+
+.overlay-container {
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10005;	
+	display:none;	
+}
+
+.overlay-container img {
+	position:fixed;
+	top:50%;
+	left:50%;
+}
+
+.horizontal-seperator {
+	height:1em;
+	width:100%;
+}
+
+.horizontal-seperator-small {
+	height:0.5em;
+	width:100%;
+}
+
+.horizontal-seperator-line {
+	width:100%;
+	border-bottom: 1px solid #ccc;
+	margin-top:0.2em;
+	margin-bottom:0.2em;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	margin:0;
+	/*margin:0 1em 0 1em;*/
+	/*border:1px solid #ccc;*/
+}
+
+.inner_section {
+	clear: both;
+	margin:0;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 0;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:'';
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+                                               
+					
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 76.1%;
+}
+.span_1_of_3 {
+	width: 20.2%;
+}
+
+/*  GRID OF TEN   ============================================================================= */
+.span_10_of_10 {
+	width: 100%;
+}
+
+.span_9_of_10 {
+	width: 89.84%;
+}
+
+.span_8_of_10 {
+	width: 79.68%;
+}
+
+.span_7_of_10 {
+	width: 69.52%; 
+}
+
+.span_6_of_10 {
+	width: 59.36%; 
+}
+
+.span_5_of_10 {
+	width: 49.2%; 
+}
+
+.span_4_of_10 {
+	width: 39.04%; 
+}
+
+.span_3_of_10 {
+	width: 28.88%;
+}
+
+.span_2_of_10 {
+	width: 18.72%; 
+}
+
+.span_1_of_10 {
+	width: 8.56%; 
+}
+
+/*  GRID OF EIGHT   ============================================================================= */
+.span_8_of_8 {
+	width: 100%;
+}
+
+.span_7_of_8 {
+	width: 87.3%; 
+}
+
+.span_6_of_8 {
+	width: 74.6%; 
+}
+
+.span_5_of_8 {
+	width: 61.9%; 
+}
+
+.span_4_of_8 {
+	width: 49.2%; 
+}
+
+.span_3_of_8 {
+	width: 36.5%;
+}
+
+.span_2_of_8 {
+	width: 23.8%; 
+}
+
+.span_1_of_8 {
+	width: 11.1%; 
+}
+
+
+/*  GRID OF SIX   ============================================================================= */
+.span_6_of_6 {
+	width: 100%;
+}
+
+.span_5_of_6 {
+  	width: 83.06%;
+}
+
+.span_4_of_6 {
+  	width: 66.13%;
+}
+
+.span_3_of_6 {
+  	width: 49.2%;
+}
+
+.span_2_of_6 {
+  	width: 33.00%;
+}
+
+.span_1_of_6 {
+  	width: 16.00%; /* 15.33% */
+}
+
+/*  RIGHT BAR MODULE   ============================================================================= */
+.right_bar_module_span_2_of_6 {
+  	width: 100%;
+}
+
+/*  OVERLAY GRIDS (FOR DIALOGS, ETC)   ============================================================================= */
+.overlay_span_middle {
+	width: 32.26%; 
+}
+
+.overlay_span_side {
+	width: 32.26%;
+}
+
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+	.span_2_of_3 {
+		width: 80%; 
+	}
+	.span_1_of_3 {
+		width: 20%; 
+	}		
+	.span_4_of_4 {
+		width: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%;
+	}		
+
+	.span_2_of_6 {
+		width: 100%; 
+	}	
+	.span_1_of_6 {
+		width: 33%; 
+	}
+			
+	.span_10_of_10 {
+		width: 100%; 
+	}
+	.span_9_of_10 {
+		width: 100%; 
+	}
+	.span_8_of_10 {
+		width: 100%; 
+	}
+	.span_7_of_10 {
+		width: 100%; 
+	}
+	.span_6_of_10 {
+		width: 100%; 
+	}
+	.span_5_of_10 {
+		width: 100%; 
+	}
+	.span_4_of_10 {
+		width: 100%; 
+	}
+	.span_3_of_10 {
+		width: 100%; 
+	}
+	.span_2_of_10 {
+		width: 100%; 
+	}
+	.span_1_of_10 {
+		width: 100%; 
+	}
+
+	.overlay_span_middle {
+		width: 100%;
+	}
+
+	.overlay_span_side {
+		width: 100%;
+	}
+	
+	.container {
+		margin:0;
+	}
+	.navigation {
+		line-height:1.8em;
+		font-size:0.8em;
+	}	
+	.css_btn_class {
+		font-size:2em;
+	}	
+
+	.right_bar_module_span_2_of_6 {
+		width:100%;
+	}	
+
+	.box-action {
+		margin:0.2em;
+	}	
+
+	.featured-short-description {
+		display:none;
+	}
+
+	.box-more-games {
+	    height:140px !important;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.span_2_of_3 {
+		width: 80%; 
+	}
+	.span_1_of_3 {
+		width: 20%; 
+	}
+		
+	.span_6_of_10 {
+		width: 50.0%;
+	}
+	.span_4_of_10 {
+		width: 50.0%;
+	}				
+	.span_7_of_10 {
+		width: 100%; 
+	}
+	.span_2_of_10 {
+		width: 100%; 
+	}
+	.span_3_of_10 {
+		width: 100%; 
+	}
+
+	.span_2_of_6 {
+		width: 50%;
+	}	
+	
+	.navigation {
+		line-height:2em;
+	}
+
+	.right_bar_module_span_2_of_6 {
+		width:50%;
+	}
+
+	.span_1_of_4 {
+		width: 100%;
+	}
+	
+	.span_3_of_4 {
+		width: 100%; 
+	}
+
+	.overlay_span_middle {
+		width: 50%;
+	}
+
+	.overlay_span_side {
+		width: 25%;
+	}	
+}
+
+
+@media only screen and (min-width : 768px) and (max-width: 1152px) {	
+	.tablet-left {
+		width:60%;
+	}
+	
+	.tablet-right {
+		width:40%;
+	}
+	
+	.span_3_of_4 {
+		width: 65%; 
+	}
+	
+	.span_1_of_4 {
+		width: 33%;
+	}
+
+	.span_2_of_6 {
+		width: 50.00%;
+	}
+	
+	.span_1_of_6 {
+		width: 19.7%; 
+	}
+		
+	.right_bar_module_span_2_of_6 {
+		width:100%;
+	}		
+
+	.overlay_span_middle {
+		width: 45%;
+	}
+
+	.overlay_span_side {
+		width: 27.5%;
+	}	
+	
+	.container {
+		margin:0;
+	}
+
+	.navigation {
+		line-height:1.8em;
+	}
+
+	.box-embed {
+		width:92%;
+	}	
+	
+}
+
+
+@media only screen and (max-width: 1165px) {			
+	.AdPortalLeaderboard {
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 1280px) {			
+	.container {
+		margin:0;
+	}
+	.AdPortalSkyscraperLeft {
+		display:none;
+	}	
+	.AdPortalSkyscraperRight {
+		display:none;
+	}		
+}
+
+/* iPhone5 landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+	.span_6_of_10 {
+		width: 60.0%;
+	}
+	.span_4_of_10 {
+		width: 40.0%;
+	}
+	.header img {
+		
+	}		
+}
+		.header {
+    color: #000;
+    font-size: 32px;
+    /* CHANGE HEADER COLOR */
+    background: #ffffff;
+    /*background: linear-gradient(#ffc701, #ff6200);*/
+    /* ********* */
+    text-align: right;
+    position: relative;
+    padding: 5px;
+    height: 61px;
+}
+
+.header a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0;
+    height: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    z-index: 100;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 1px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ed1c24; 
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.topnav a:hover {
+    background-color: #fa4c53; /* CHANGE DROPDOWN-MENU HOVER COLOR */
+    color: yellow;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*.active {*/
+/*    background-color: #ef7c34;*/
+/*    color: white;*/
+/*    -webkit-border-radius: 0;*/
+/*    -moz-border-radius: 0;*/
+/*    border-radius: 0;*/
+/*}*/
+
+a.bt-icon {
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    padding: 2px 8px 5px 8px;
+    height: 36px;
+    /*padding: 0.02em 0.2em 0.07em 0.2em;*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #FFFFFF; /* CHANGE MENU BUTTON COLOR */
+}
+
+.nav-container {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 830px;
+}
+
+.header a.logo {
+    display: block;
+    text-align:right;
+}
+
+.header a.logo img {
+    margin-top:0em;
+}
+
+div.bar {
+    width: 35px;
+    height: 5px;
+    background-color: #245C13;
+    margin: 6px 0;
+}
+
+@media screen and (max-width: 1080px) {
+    .topnav a:hover {
+        /*background-color: #e1814d; */
+        /*color: yellow;*/
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .nav-container {
+        position: relative;
+        width: 50%;
+        top: 0;
+    }
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 10px 0;
+        background-color: #ffffff; /* CHANGE DROPDOWN-MENU BACKGROUND COLOR */
+        
+    }
+    .topnav {
+        height: 0;
+        background-color: #f94e55;  /* CHANGE DROPDOWN-MENU COLOR */
+    }
+    .topnav.responsive {
+        height: 387px;
+        -webkit-border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+        border-radius: 0 0 6px 6px;
+        /*border: 3px solid #2F8217;*/
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    a.bt-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .header a.logo img {
+        margin-top: 0.1em;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .header a.logo img {
+        margin-top: 0.1em;
+    }
+}
+		
+		
+		.footer {
+  /*background: #ed1c24;*/
+  
+  /***********/
+  color: #ed1c24;
+  padding: 0.5em;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  font-size: 0.8em;
+}
+/*
+footer div.link{
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;      
+    display: -webkit-flex;     
+    display: flex;             
+    justify-content: space-around;
+    height: 40px;
+    margin: 0;
+    align-items: center;
+}
+*/
+
+.button-unsubscribe {
+	font-size:0.8em;
+	font-weight:normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;	
+	padding:0.5em;
+	text-decoration:none;	
+		
+	color:#ffffff;	
+	background-color:#cccccc;
+	display:inline-block;    
+}
+
+@media only screen and (min-height: 770px) {
+    footer {
+    	position: fixed;
+    	bottom: 0;
+    	left: 0;
+    }	
+}
+		/*BRANDING_LOGIN_THEME*/
+		/* Logout Theme Template here */
+.box-logout {
+	background:rgba(255,255,255,1);
+	color:black;
+	margin:1em;
+	padding:0.5em;
+}
+
+.box-logout-header {
+	font-size:1.2em;
+	border-bottom:1px solid #ccc;
+	margin:0.5em;
+}
+
+.box-logout-subheader {
+	font-size:0.8em;
+	margin:0.8em;
+}
+
+.box-logout-footer {
+	border-top:1px solid #ccc;
+	font-size:0.8em;
+	margin:0.8em;
+	padding-top:0.4em;
+}
+
+.box-logout-contents {
+	margin:0.5em;
+}
+
+.box-logout-close {
+	width:24px;
+	height:24px;
+	text-align:right;
+	float:right;
+	background-image:url('../static/test/images/close2.png');
+}
+
+.box-logout-form-input {
+	margin-top:1em;
+	width:100%;
+	font-size:0.8em;
+	border:1px solid #ccc;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:0.3em;	
+}
+		/*BRANDING_REGISTER_THEME*/
+		/* Facebook Theme Template here */
+
+		/* Change Username Theme Template here */
+/* Register Theme Template here */
+.box-change-username {
+	background:rgba(255,255,255,1);
+	color:black;
+	margin:1em;
+	padding:0.5em;
+}
+
+.box-change-username-header {
+	font-size:1.2em;
+	border-bottom:1px solid #ccc;
+	margin:0.5em;
+}
+
+.box-change-username-subheader {
+	font-size:0.8em;
+	margin:0.8em;
+}
+
+.box-change-username-footer {
+	border-top:1px solid #ccc;
+	font-size:0.8em;
+	margin:0.8em;
+	padding-top:0.4em;
+}
+
+.box-change-username-contents {
+	margin:0.5em;
+}
+
+.box-change-username-close {
+	width:24px;
+	height:24px;
+	text-align:right;
+	float:right;
+	background-image:url('../static/test/images/close2.png');
+}
+
+.box-change-username-form-input {
+	margin-top:1em;
+	width:100%;
+	font-size:0.8em;
+	border:1px solid #ccc;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:0.3em;	
+}
+
+
+		/* Social Share Theme Template here */
+.box-social-share {
+	font-size:0.8em;
+	border:1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	margin:0.5em;
+}
+
+.box-header-social-share {
+	font-size:1.2em;
+	padding:0.5em;
+	text-align:center;
+	
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2NiZDNkZiIgc3RvcC1vcGFjaXR5PSIwLjY0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(203,211,223,0.64) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(99%,rgba(203,211,223,0.64)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-8 */
+	
+	border-bottom:1px solid #ccc;
+}
+
+.box-content-social-share {
+	padding:0.5em;
+}
+
+.box-action-social-share {
+	margin:0.5em;
+}
+
+.box-description-social-share {
+	padding:0.1em 0.5em 0.1em 0.5em;
+	max-height:30px;	
+}
+
+		/*BRANDING_USER_PANEL_UNLOGGED_THEME*/
+		/*BRANDING_USER_PANEL_LOGGED_THEME*/	
+		.box-leaderboard {
+	font-size:0.8em;
+	border:1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	margin:0.5em;
+}
+
+.box-header-leaderboard {
+	font-size:1.2em;
+	padding:0.5em;
+	text-align:center;
+	
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2NiZDNkZiIgc3RvcC1vcGFjaXR5PSIwLjY0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(203,211,223,0.64) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(99%,rgba(203,211,223,0.64)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-8 */
+	
+	border-bottom:1px solid #ccc;
+}
+
+.box-content-leaderboard {
+	padding:0.5em;
+}
+
+.box-content-leaderboard a{
+	text-decoration:none;
+}
+
+.box-content-leaderboard a:hover{
+	text-decoration:none;
+}
+
+.box-title-leaderboard {
+	font-weight:bold;
+	padding:0 0.5em 0 0.5em;
+}
+
+table.leaderboard-navbar-interval-table  {
+	text-align:center;
+	width:100%;
+	height:2.5em;
+	font-size:1.1em;
+}
+table.leaderboard-navbar-interval-table tr {
+	text-align:center;
+	width:100%;
+	height:2.5em;
+	font-size:1.1em;
+}
+table.leaderboard-navbar-interval-table td {
+	width:33.00%;
+}
+
+.user-message {
+	border:1px solid #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	max-height:400px;
+	padding:0.5em;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	word-wrap:break-word;
+}
+
+textarea.gamecenter-user-message-compose-textarea {
+	width:98%;
+	height:5em;
+	border: 1px solid #888; 
+	padding:0.5em;
+}
+
+.user-panel-username {
+	font-weight:bold;
+}
+
+.avatar-icon {
+	max-width:64px;
+	max-height:64px;
+}
+
+.leaderboard-navbar-interval {
+	border-bottom:1px solid #ccc;
+}
+
+.leaderboard-navbar-interval a {
+	text-decoration:none !important;
+}
+
+.leaderboard-navbar-interval a:hover {
+	text-decoration:underline !important;
+}
+
+.leaderboard-navbar-interval-table-unselected {
+	/* NOTHING HERE */
+}
+
+.leaderboard-navbar-interval-table-selected {
+	background-color:#cccccc;
+}
+
+.leaderboard-navbar-game {
+	padding:0.6em 1em 0.6em 1em;
+	border-bottom:1px solid #ccc;	
+	font-size:1.1em;	
+	overflow-y:scroll;
+	max-height:200px;
+}
+.leaderboard-navbar-game a {
+	text-decoration:none !important;
+}
+
+.leaderboard-navbar-game a:hover {
+	text-decoration:underline !important;
+}
+
+.leaderboard-icon {
+	margin:0em 0.5em;
+    max-width:64px;
+    max-height:64px;
+	width:100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 12em;
+	height:1.5em;
+	font-size:1em;
+	margin:0.5em 0 0.5em 0;
+}
+
+input[type="password"] {
+    width: 12em;
+	height:1.5em;
+	font-size:1em;
+	margin:0.5em 0 0.5em 0;	
+}
+
+.valid {
+	font-size:0.8em;
+	color:#1bdc24;	
+}
+
+.error {
+	font-size:0.8em;
+	color:#ea1313;
+	margin-top:0.2em;
+	margin-bottom:0.5em;
+	display:block;
+}
+
+
+		
+		/*BRANDING_USER_PROFILE_THEME*/
+		/* Genre Landing Page Theme Template here */
+.genre-landing-page-header {
+	color:#128ccb;
+	text-align:center;
+	font-size:1.1em;
+}
+
+.box-genre-landing-page {
+	font-size:0.8em;
+	border:10px solid #ffffff;
+	height:340px;
+	margin:0.5em;
+	background-color:#ffffff !important;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;	
+    text-align:center;
+    color:#ffffff;
+}
+
+.box-action-genre-landing-page {
+	margin:0.5em;
+}
+
+.box-avatar-genre-landing-page {
+	width:128px;
+	height:128px;
+}
+
+.box-header-genre-landing-page {
+	font-size:1.2em;
+	padding:0.5em;
+	text-align:center;
+	
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2NiZDNkZiIgc3RvcC1vcGFjaXR5PSIwLjY0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(203,211,223,0.64) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(99%,rgba(203,211,223,0.64)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(203,211,223,0.64) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-8 */
+	
+	border-bottom:1px solid #ccc;
+}
+
+.box-content-genre-landing-page {
+	/*border:1px solid #ccc;*/
+}
+
+.box-content-genre-landing-page a{
+	text-decoration:none;
+}
+
+
+.box-title-genre-landing-page {
+	font-weight:bold;
+	padding:0 0.5em 0 0.5em;
+    overflow: hidden;	
+    white-space: nowrap;
+	text-overflow: ellipsis;	
+}
+
+.box-short-description-genre-landing-page {
+	padding:0.1em 0.5em 0.1em 0.5em;
+	max-height:30px;	
+	/*border:1px solid #ccc;*/
+	text-overflow: ellipsis;
+	max-height:30px;	
+}
+
+.box-icon-genre-landing-page {
+	width:100%;
+	/*max-height:72px;*/
+	/*height:100%; causes safari elongation*/
+	/*border:1px solid #eee;*/
+	padding-bottom:0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+    /*
+    .box-genre-landing-page {
+    	height:145px !important;	
+    }
+    */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+    /*
+    .box-genre-landing-page {
+    	height:145px !important;
+    }
+    */
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    /*
+    .box-genre-landing-page {
+    	height:140px !important;	
+    }	
+    */
+}
+
+
+@media only screen and (min-width : 768px) and (max-width: 1152px) {	
+    /*
+    .box-genre-landing-page {
+    	height:140px !important;
+    }
+    */
+}
+
+
+@media only screen and (max-width: 1165px) {
+    
+    .box-genre-landing-page {
+    	height:360px !important;
+    }
+    
+    
+}
+
+@media only screen and (min-width : 1480px) {
+    
+    .box-genre-landing-page {
+    	height:480px !important; 
+    }
+    
+}
+	
+		/*BRANDING_SUBSCRIPTION_LANDING_PAGE_THEME*/	
+		/*BRANDING_SUBSCRIPTION_LOGIN_THEME*/	
+		
+		/*BRANDING_TERMS_OF_SERVICE_THEME*/
+		/*BRANDING_PRIVACY_POLICY_THEME*/
+		/* Reset Password Theme Template here */
+.box-reset-password {
+	background:rgba(255,255,255,1);
+	color:black;
+	margin:1em;
+	padding:0.5em;
+}
+
+.box-reset-password-header {
+	font-size:1.2em;
+	border-bottom:1px solid #ccc;
+	margin:0.5em;
+}
+
+.box-reset-password-subheader {
+	font-size:0.8em;
+	margin:0.8em;
+}
+
+.box-reset-password-footer {
+	border-top:1px solid #ccc;
+	font-size:0.8em;
+	margin:0.8em;
+	padding-top:0.4em;
+}
+
+.box-reset-password-contents {
+	margin:0.5em;
+}
+
+.box-reset-password-close {
+	width:24px;
+	height:24px;
+	text-align:right;
+	float:right;
+	background-image:url('../static/test/images/close2.png');
+}
+
+.box-reset-password-form-input {
+	margin-top:1em;
+	width:100%;
+	font-size:0.8em;
+	border:1px solid #ccc;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:0.3em;	
+}
+
+
+		/* Popup Box Theme Template here */
+.box-popup-box {
+	background:rgba(255,255,255,1);
+	color:black;
+	margin:1em;
+	padding:0.5em;
+}
+
+.box-popup-box-header {
+	font-size:1.2em;
+	border-bottom:1px solid #ccc;
+	margin:0.5em;
+}
+
+.box-popup-box-subheader {
+	font-size:0.8em;
+	margin:0.8em;
+}
+
+.box-popup-box-footer {
+	/*border-top:1px solid #ccc;*/
+	font-size:0.8em;
+	margin:0.8em;
+}
+
+.box-popup-box-contents {
+	margin:0.5em;
+	padding:0.2em;
+}
+
+.box-popup-box-close {
+	width:24px;
+	height:24px;
+	text-align:right;
+	float:right;
+	background-image:url('../static/test/images/close2.png');
+}
+
+.box-popup-box-form-input {
+	margin-top:1em;
+	width:100%;
+	font-size:0.8em;
+	border:1px solid #ccc;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:0.3em;	
+}
+
+
+		/*BRANDING_CONTACT_PAGE_THEME*/
+		
+	</style>
+
+	<!--SUBSTITUTED BY THE DATASTORE - AS BRANDING BASE THEME
+	<link rel="stylesheet" type="text/css" href="/static/frontend/ui/styles/base.css">
+	<link rel="stylesheet" type="text/css" href="/static/frontend/ui/styles/responsive.css">
+	-->
+	
+	<!--NOT THAT IMPORTANT FOR NOW-->
+	<link rel="stylesheet" type="text/css" href="../static/frontend/ui/styles/navigation.css">
+	<link rel="stylesheet" type="text/css" href="../static/frontend/ui/styles/genre.css">	
+	<link rel="stylesheet" type="text/css" href="../static/frontend/ui/styles/ad.css">
+	<link rel="stylesheet" type="text/css" href="../static/frontend/ui/styles/notification.css">
+	
+	<!--<link rel="stylesheet" type="text/css" href="/static/frontend/ui/styles/box.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="/static/frontend/ui/styles/gamecenter.css">-->
+		
+	<script type="text/javascript" src="../static/libs/jquery/jquery-1.11.1.min.js"></script>
+	<!--<script type="text/javascript" src="/static/libs/jstorage/jstorage.js"></script>-->
+	
+	<script type="text/javascript">
+		var Localization = {
+			// Validation
+			"Validation":{
+				// jquery.validate.extra.js
+				"urlshort":"",
+				"alphanumeric":"Letters, numbers, and dashes only please",
+				"lettersonly":"",
+				"letterswithbasicpunc":"",
+				"letterswithwhitespace":"",
+				"alphanumericnodash":"",
+				"alphanumericwhitespace":"",
+				"nowhitespace":"",
+				"ziprange":"",
+				"integer":"",
+				"vinUS":"",
+				"dateITA":"",
+				"user-password-retype":"Please type in the same password",
+				"maxWords":"",
+				"minWords":"",
+				"rangeWords":"",
+				"valueNotEquals":"",
+
+				// jquery.validate.js
+		        "required": "This field is required",
+		        "remote": "",
+		        "email": "Valid email address required",
+		        "url": "",
+		        "date": "",
+		        "dateISO": "",
+		        "number": "",
+		        "digits": "",
+		        "creditcard": "",
+		        "equalTo": "",
+		        "accept": "",
+		        "maxlength": "Please enter no more than {0} characters",
+		        "minlength": "Please enter at least {0} characters",
+		        "rangelength": "",
+		        "range": "",
+		        "max": "",
+		        "min": "",		
+			}, // End of Validation		
+		}	
+	</script>	
+	<script type="text/javascript" src="../static/frontend/base.js"></script>	
+	
+	<!--COMBINED AS BASE 
+	<script type="text/javascript" src="/static/config.js"></script>	
+	<script type="text/javascript" src="/static/libs/language.js"></script>	
+	<script type="text/javascript" src="/static/libs/jquery/jquery.validate.js"></script>
+	<script type="text/javascript" src="/static/libs/jquery/jquery.validate.extra.js"></script>
+	<script type="text/javascript" src="/static/libs/jquery/jquery.form.min.js"></script>
+	<script type="text/javascript" src="/static/tools.js"></script>
+	-->
+</head>
+<body>
+    <!-- BEGIN CONTAINER -->
+	<div id="sticky-container" class="container ">
+		
+		
+				
+		
+					
+		<div class="header">
+    <a href="javascript:void(0);" class="bt-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </a>
+    <a class="logo" href="../index.html"><img src="http://lh3.googleusercontent.com/okRilZP9hhSrz1r9fXDc9kz17rONqYLmooGcFKCLfY0FrVzve77MDGeWyscfZC3uNTbe8kQHK8F2I91KZxng6hSjQZcy_lzrB9E" width="202" height="60"></a>
+</div>
+
+<div class="nav-container">
+    <div class="topnav" id="myTopnav">
+        
+			<a href="family.html">
+			    Family
+			</a>
+	    
+			<a href="adventure.html">
+			    Adventure
+			</a>
+	    
+			<a href="sports.html">
+			    Sports
+			</a>
+	    
+			<a href="strategy.html">
+			    Strategy
+			</a>
+	    
+			<a href="match-3.html">
+			    Match 3
+			</a>
+	    
+			<a href="puzzle.html">
+			    Puzzle
+			</a>
+	    
+			<a href="cards.html">
+			    Cards
+			</a>
+	    
+			<a href="action.html">
+			    Action
+			</a>
+	    
+    </div>
+</div>
+
+<script type="text/javascript">
+// Collapse menu
+function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+// $(".topnav a").click(function(){
+//     var arr = $(".topnav a");
+//     for(var i=0; i<arr.length; i++) {
+//         $(arr[i]).removeClass("active");
+//     }
+//     $(this).addClass("active");
+// });
+</script>
+		
+		
+		<!--MAIN MODULES GO HERE-->
+		
+		<!--BRANDING_HOME_STRUCTURE-->
+		<!--BRANDING_GAME_STRUCTURE-->
+		<!--BRANDING_USER_PROFILE_STRUCTURE-->
+		<!-- Genre Landing Page Structure Template here -->
+<div class="horizontal-seperator"></div>
+<div class="section group">
+	<div class="genre-landing-page-header">
+		Strategy games requires users to plan and execute a variety of actions, to achieve an end goal. Example games include tower defense games, management simulation, and real-time combat <!-- FOR SEO -->	
+	</div>
+	<div class="horizontal-seperator"></div>
+</div>
+
+<div class="section group">
+		<div class="col span_4_of_4">
+				<!-- BROAD STUCTURE 3-COLUMN -->
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servee65a.html?portal_id=5763614147346432&amp;game_id=5246798932213760&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/math-vs-bat/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Solve the math to defeat the bats
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/math-vs-bat">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve0640.html?portal_id=5763614147346432&amp;game_id=4770432432472064&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/wasteland-warriors/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Compete against friends online
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/wasteland-warriors">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve7e04.html?portal_id=5763614147346432&amp;game_id=5832264580595712&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/stupid-zombies-1/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Hit zombie game with over 50 million downloads
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/stupid-zombies-1">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve03af.html?portal_id=5763614147346432&amp;game_id=5154802209128448&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/oil-hunt/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Drill for oil while exploring different lands
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/oil-hunt">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve145b.html?portal_id=5763614147346432&amp;game_id=5109320418066432&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/defend-the-castle/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												How long can you survive?
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/defend-the-castle">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve3229.html?portal_id=5763614147346432&amp;game_id=5657645303201792&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/connect-the-roads/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Arrange the tiles to complete the road
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/connect-the-roads">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve3a05.html?portal_id=5763614147346432&amp;game_id=5695640194514944&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/protect-the-kingdom/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Don&#39;t let the enemies reach your base!
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/protect-the-kingdom">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve925b.html?portal_id=5763614147346432&amp;game_id=6724092796338176&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/ez-mahjong/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Match the mahjong tiles
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/EZ Mahjong">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve9b28.html?portal_id=5763614147346432&amp;game_id=5204581416960000&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/4-in-a-row/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Connect four dots in a row
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/4-in-a-row">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servec212.html?portal_id=5763614147346432&amp;game_id=4577429755527168&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/casual-checkers/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Can you beat the computer?
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/casual-checkers">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve89c5.html?portal_id=5763614147346432&amp;game_id=4825507323445248&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/fill-the-gap/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Drag and drop blocks to score
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/fill-the-gap">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve10f5.html?portal_id=5763614147346432&amp;game_id=5295539697483776&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/backgammon/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												The classic backgammon game
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/backgammon">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servebbfb.html?portal_id=5763614147346432&amp;game_id=5708888423792640&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/twitchie-clicker/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Be the king of streamers, get millions of ...
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/twitchie-clicker">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serveef2d.html?portal_id=5763614147346432&amp;game_id=6029361703550976&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/hamster-roll/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Roll and bounce through a pachinko machine
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/hamster-roll">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve498d.html?portal_id=5763614147346432&amp;game_id=5334250506158080&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/brick-breaker/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Break out from the brick walls
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/brick-breaker">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve34f4.html?portal_id=5763614147346432&amp;game_id=5451899189854208&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/tiny-battle/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Control humans, defend against orcs!
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/tiny-battle">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve4e00.html?portal_id=5763614147346432&amp;game_id=4828208332537856&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/casual-chess/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Classic chess game
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/casual-chess">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servea48a.html?portal_id=5763614147346432&amp;game_id=5106499518988288&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/megacity-hop/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Hop your way around this mega city
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/megacity-hop">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serveb569.html?portal_id=5763614147346432&amp;game_id=4701136255713280&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/clash-of-vikings/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Lead your army of vikings to victory
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/clash-of-vikings">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve7cb4.html?portal_id=5763614147346432&amp;game_id=5843079878672384&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/halloween-chess/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Classic chess in Halloween theme
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/halloween-chess">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servecb38.html?portal_id=5763614147346432&amp;game_id=5696168777482240&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/jumping-burger/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Avoid obstacles and collect ingredients
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/jumping-burger">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve59ea.html?portal_id=5763614147346432&amp;game_id=5400129264680960&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/defend-the-tank/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Manage soldiers to protect your tank
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/defend-the-tank">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve93b7.html?portal_id=5763614147346432&amp;game_id=4798263585669120&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/horace-vs-cheese/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Launch Horace the Hamster into the cheese!
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/horace-vs-cheese">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servee11a.html?portal_id=5763614147346432&amp;game_id=5924576044253184&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/battleships-ready-go/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Sink the enemy ships in naval warfare
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/battleships-ready-go">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../servede61.html?portal_id=5763614147346432&amp;game_id=6579683949805568&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/puzzle-slide-travel-edition/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Discover your love of travelling
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/puzzle-slide-travel-edition">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serveb1e0.html?portal_id=5763614147346432&amp;game_id=6103441299472384&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/corporate-overlord/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Build your evil corporation
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/corporate-overlord">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+				
+						<div class="col span_2_of_6">
+							<div class="box-genre-landing-page">
+									<div class="box-content-genre-landing-page">
+										<a href="../serve26e0.html?portal_id=5763614147346432&amp;game_id=5760998456688640&amp;branding_id=5734046899372032&amp;ad_id=4865470182195200&amp;portal_localization_id=5092721263902720">
+										<div class="row-fluid">
+											<div class="col span_4_of_4">								
+												<img class="box-icon-genre-landing-page" src="../../cdn.marketjs.net/games/kill-the-spy/localization/en/media/graphics/promo/banners/440x280.jpg">								
+											</div>	
+											<div class="box-short-description-genre-landing-page">
+												Tap on structures, to eliminate the spy agents
+											</div>
+										</div>	
+										</a>
+										<!--
+										<div class="horizontal-seperator"></div>
+										<div style="float:right;"><a class="button" href="/game/kill-the-spy">Play</a></div>
+									    -->
+									</div>	
+							</div>
+						</div>	
+								
+		</div>
+		
+		<div class="col span_3_of_10">	
+			<!-- Portal Box Structure Template here -->
+<div class="AdPortalBox">
+	<center>
+		
+	</center>
+</div>				
+												
+		</div>
+</div>
+
+
+<script type="text/javascript">
+	// LEADERBOARD SCRIPT HERE
+var Leaderboard = {
+	preferences:{
+		interval:'alltime',
+		page_type:null, // to be populated in the structure of the page
+		game_key:null, // to be populated in the structure of the game page
+		game_title:null,
+		show_all_games:false, // initial state
+	},
+	intervals:['daily','weekly','alltime'],	
+	// to clean
+	windowIDs:['gamecenter-login',
+				'gamecenter-register',
+				'gamecenter-logout',
+				'gamecenter-forgot-password',
+				'gamecenter-forgot-password-email-sent',
+				'gamecenter-activator',
+				'gamecenter-menu-main',
+				'gamecenter-menu-user-profile',
+				'gamecenter-menu-leaderboard',
+				'gamecenter-avatar-choose',
+				],		
+	// The bar where users choose alltime, weekly, daily
+	// Abstract color into css
+	updateNavbarInterval:function(interval){
+		
+		// Deselect all intervals first
+		for(i=0;i<this.intervals.length;i++){
+			var div = $("#leaderboard-navbar-interval-table-" + this.intervals[i])
+			div.removeClass();
+			div.addClass('leaderboard-navbar-interval-table-unselected');
+		}
+		
+		// Now select the specified interval
+		var div = $("#leaderboard-navbar-interval-table-" + interval);
+		div.removeClass();
+		div.addClass('leaderboard-navbar-interval-table-selected');
+		
+	},	
+	// The bar where users choose the game to view its score
+	updateNavbarGame:function(){
+		if(!this.preferences.game_key){
+			console.log('no game_key detected ...')
+			
+			// Update selection text
+			var template = ""
+			template+="<a href=\"\" onclick=\"Leaderboard.toggleAllGames();return false;\">" + 'All games' + "</a>";						
+			$('#leaderboard-navbar-game-selection-current').html(template);
+			
+			// Update games list, with the 'All games' entry
+			$('#leaderboard-navbar-games-list-addenum').hide();	
+			$('#leaderboard-navbar-game-selection-current').html(template);		
+			
+		}else{ // Game level search
+			console.log('game_key detected ... ')
+
+			// Update selection text
+			var game_title = $('#leaderboard-game-key-' + this.preferences.game_key).text()
+			var template = ""
+			template+="<a href=\"\" onclick=\"Leaderboard.toggleAllGames();return false;\">" + game_title + "</a>";			
+			$('#leaderboard-navbar-game-selection-current a').attr('onclick','Leaderboard.toggleAllGames();return false;');		
+			$('#leaderboard-navbar-game-selection-current').html(template);
+			
+			// Update games list, with the 'All games' entry
+			$('#leaderboard-navbar-games-list-addenum').show();
+			$('#leaderboard-navbar-game-selection-current').html(template);			
+		}	
+	},
+	toggleAllGames:function(){
+		var div = $('#leaderboard-navbar-games-list');
+		if(!this.preferences.show_all_games){
+			$('#leaderboard-navbar-games-list').show();
+			this.preferences.show_all_games = true;
+			$('#leaderboard-navbar-games-seperator').show();
+		}else{
+			$('#leaderboard-navbar-games-list').hide();
+			this.preferences.show_all_games = false;
+			$('#leaderboard-navbar-games-seperator').hide();
+		}
+	},
+	// Why do we need these
+	getDataAllGames:function(){
+		this.preferences.game_key = null;
+		this.preferences.page_type = 'portal';
+		
+		Leaderboard.toggleAllGames();
+		
+		this.getData(this.preferences.page_type,this.preferences.interval,this.preferences.game_key);		
+	},
+	getDataByInterval:function(interval){
+		this.getData(this.preferences.page_type,interval,this.preferences.game_key);		
+	},
+	getDataByGame:function(game_key){
+		this.preferences.game_key = game_key;
+		this.preferences.page_type = 'game';
+		
+		Leaderboard.toggleAllGames();
+		
+		this.getData(this.preferences.page_type,this.preferences.interval,game_key);
+	},		
+	getData:function(mode,interval,game_key){
+				
+		console.log('getData:',mode,interval);
+		var url;
+		this.preferences.page_type = mode; // any use for this?
+		this.preferences.interval = interval;
+		this.preferences.game_key = game_key; 
+		
+		switch(mode){
+			case 'portal': // eg: all games
+				console.log('querying results at portal level ...')
+				url = '/leaderboard/read/' + interval + '';	
+				break;
+			case 'game':
+				console.log('querying results at portal game level ...')
+				url = '/leaderboard/read/' + interval + '/' + game_key + '';				
+				break;
+			default:
+				console.log('No mode given, returning ...');
+				return;
+		}
+		
+		$.ajax({
+	        type: 'GET',
+	        dataType: 'json',
+			url:url,
+            beforeSend:function (){
+	
+				// Update
+				Leaderboard.updateNavbarInterval(interval);
+				Leaderboard.updateNavbarGame();
+				
+				// Populate DOM (temp hack)
+				var loadingHTML = "";
+				loadingHTML+="<center>";
+				loadingHTML+="<div class=\"horizontal-seperator\"></div>";
+				loadingHTML+="<div class=\"horizontal-seperator\"></div>";
+				//loadingHTML+="<div>Retrieving data, please wait ...</div>"; // Remove english words
+				loadingHTML+="<div class=\"horizontal-seperator\"></div>";
+				loadingHTML+="<div><img src=\"/static/common/ui/loader/loader-grey.gif\"></div>";
+				loadingHTML+="<div class=\"horizontal-seperator\"></div>";
+				loadingHTML+="<div class=\"horizontal-seperator\"></div>";
+				loadingHTML+="</center>";
+				
+				$('#leaderboard').html(loadingHTML);				
+			},			
+		}).done(function(response){
+			if(response.status.code==200){
+				console.log('successful')	
+
+				// Populate DOM
+				console.log('POPULATE DOM')			
+				
+				// TODO
+				$('#leaderboard').html(response.data);		
+						
+			}else{
+				console.log('failed')
+				$('#leaderboard').html(response.status.message);
+			}
+							
+		});	
+								
+	},		
+}
+
+
+	
+	var LeaderboardEnabled = eval('false')
+	if(LeaderboardEnabled){	
+		Leaderboard.preferences.page_type = 'game';
+		Leaderboard.preferences.game_key = '';
+		Leaderboard.preferences.interval = 'alltime'; 
+		Leaderboard.getDataByInterval(Leaderboard.preferences.interval);
+	}
+
+	// Portal Box Script Template here
+
+	// Portal Leaderboard Script Template here
+
+	// Portal Skyscraper Left Script Template here
+
+	// Portal Skyscraper Right Script Template here
+
+		
+</script>
+		<!--BRANDING_SUBSCRIPTION_LANDING_PAGE_STRUCTURE-->
+		<!--BRANDING_SUBSCRIPTION_LOGIN_STRUCTURE-->
+		
+		<!--BRANDING_LOGIN_STRUCTURE-->
+		<!-- Logout Structure Template here -->
+<div class="section group">
+	<div id="logout" class="overlay-container-basic">	
+		<div class="in-game-menubar-box">
+			<div class="col overlay_span_side">&nbsp;</div>	
+			<div class="col overlay_span_middle">	
+					<div id="box-logout" class="box-logout">
+						<a onclick="Logout.hide();"><div class="box-logout-close"></div></a>
+						<div class="box-logout-header">Logged out</div>
+						<div class="box-logout-contents">
+							You have successfully logged out. Come back soon!
+						</div>
+						<div class="box-logout-action">
+							<a onclick="Logout.hide();" class="button">OK</a>
+						</div>
+					</div>
+			</div>	
+			<div class="col overlay_span_side">&nbsp;</div>
+		</div>
+	</div>	
+</div>	
+		<!--BRANDING_REGISTER_STRUCTURE-->
+		
+		<!-- Facebook Structure Template here -->
+		
+		<!-- Change Username Structure Template here -->
+<div class="section group">
+	<div id="change-username" class="overlay-container-basic">	
+			<div class='col overlay_span_side'>&nbsp;</div>	
+			<div class='col overlay_span_middle'>	
+					<div id='box-change-username' class='box-change-username'>
+						<div class="box-change-username-header">Choose your username</div>
+						<form class="box-change-username-contents" id="change-username-form" name="change-username-form" action="http://smartfun.club/user/username/change" method="post">
+							<div class="">
+								<input type="text" id="change-username-username" name="change-username-username" class='box-change-username-form-input' placeholder="Username">
+							</div>
+							<div class="box-change-username-submit">
+								<input type="submit" class="button" value="Submit">
+							</div>
+						</form>
+					</div>
+			</div>	
+			<div class='col overlay_span_side'>&nbsp;</div>
+	</div>		
+</div>
+		
+		<!--BRANDING_TERMS_OF_SERVICE_STRUCTURE-->
+		<!--BRANDING_PRIVACY_POLICY_STRUCTURE-->
+		<!-- Reset Password Structure Template here -->
+<div class="section group">
+	<div id="reset-password" class="overlay-container-basic">	
+			<div class='col overlay_span_side'>&nbsp;</div>	
+			<div class='col overlay_span_middle'>	
+					<div id='box-reset-password' class='box-reset-password'>
+					    <a onclick='ResetPassword.hide();'><div class='box-reset-password-close'></div></a>
+						<div class="box-reset-password-header">Enter your email address</div>
+						<form class="box-reset-password-contents" id="reset-password-form" name="reset-password-form" action="http://smartfun.club/user/reset_password" method="post">
+							<div class="">
+								<input type="text" id="reset-password-username" name="reset-password-email" class='box-reset-password-form-input' placeholder="Email">
+							</div>
+							<div class="box-reset-password-submit">
+								<input type="submit" class="button" value="Submit">
+							</div>
+						</form>
+					</div>
+			</div>	
+			<div class='col overlay_span_side'>&nbsp;</div>
+	</div>		
+</div>
+
+		<!-- Popup Box Structure Template here -->
+<div class="section group">
+	<div id="popup-box" class="overlay-container-basic">	
+			<div class='col overlay_span_side'>&nbsp;</div>	
+			<div class='col overlay_span_middle'>	
+					<div id='box-popup-box' class='box-popup-box'>
+					    <a onclick='PopupBox.hide();'><div class='box-popup-box-close'></div></a>
+						
+						<div class="box-popup-box-header" id="popup-box-header">Popup Box Header</div>
+
+						<div class="box-popup-box-contents" id="popup-box-contents">Popup Box Contents</div>
+
+						<div class="box-popup-box-footer">
+							<a href="#" onclick="PopupBox.hide();return false" class="button">OK</a>
+						</div>
+					</div>
+			</div>	
+			<div class='col overlay_span_side'>&nbsp;</div>
+	</div>		
+</div>
+
+		<!--BRANDING_CONTACT_PAGE_STRUCTURE-->
+		
+		
+	</div><!-- END OF CONTAINER -->
+    
+    <div id="sticky-footer">
+        <div class="section-group">
+    <div class="footer">
+    <div class="link">
+        Smartfun.club Games Demo Portal<!-- - by <a href="https://www.marketjs.com/whitelabel" target="_blank">MarketJS</a>-->
+    </div>
+    
+    <div class="horizontal-seperator"></div>
+    <br>
+    </div>
+</div>
+
+
+    </div>
+	
+	<script type="text/javascript">
+		// NOTIFICATIONS
+		$('.close').click(function(){
+			$('#notification').hide();
+		});	
+		
+		//BRANDING_LOGIN_SCRIPT
+		//BRANDING_REGISTER_SCRIPT	
+		// Logout Script Template here
+var Logout = {
+	windowIDs:[
+		'login',
+		'register',
+		'logout',
+		'forgot-password',
+		'forgot-password-email-sent',
+		'in-game-menubar-main',
+		'in-game-menubar-activator',
+		'in-game-menubar-leaderboard',
+		'in-game-menubar-user-profile',
+	],		
+	centerDivVectically:function(div){
+		var h = div.height();
+		console.log('window.innerHeight',window.innerHeight)
+		
+		// DUNNO WHY THIS WORKS WELL FOR IPHONE
+		if(window.innerHeight < 400){
+			var m = (window.innerHeight-h)/2;
+		}else{
+			var m = (window.innerHeight-h)/2 - h/4;
+		}
+		
+		console.log(h,m)
+		div.css('margin-top',m);		
+	},			
+	show:function(){
+		this.hideAll();
+		$('#logout').show();
+		this.centerDivVectically($('#box-logout'));			
+	},
+	hide:function(){
+		$('#logout').hide();
+	},
+	hideAll:function(){
+		for(i=0;i<this.windowIDs.length;i++){
+			$('#'+this.windowIDs[i]).hide();
+		}		
+	},
+	removeLabelDiv:function(div){
+		$('label').remove()
+	},
+	removeValidAndErrorClass:function(div){
+		div.removeClass('valid');
+		div.removeClass('error')
+	},
+	initialize:function(token_id){
+		// what's the drawback? users can post as often as they want, but we have a filter for frequency and value
+		$.ajax({
+	        type: 'GET',
+	        dataType: 'json',
+			url: 'http://smartfun.club/logout/' + token_id + '',
+			beforeSend:function(){
+				$('#overlay-loading').show();
+			},		
+		}).done(function(response){
+			console.log(response);
+			$('#overlay-loading').hide();
+			
+			if(response.status.code==200){
+				console.log('SUCCESSFUL LOGOUT')
+				
+				// Populate with the user panel unlogged template
+				$('#user-panel').html(response.data)
+				
+				// Popup successful logout
+				Logout.show()
+				
+				// Clear local session. Paves clean slate, for next user
+				localStorage.removeItem('mjs_user_token_id')
+				
+				// Start a new variable ('just logged out'). Prevents FB from automatically logging users back again
+				localStorage.setItem('mjs_just_logged_out',true);
+				
+			}else{
+				console.log('FAILED')
+				
+				// Popup failed logout
+				alert('Logout failed. Please contact admin')
+			}							
+		});		
+	},		
+}
+		// Facebook Script Template here
+// Login Script Template here
+var Facebook = {
+	windowIDs:[
+		'login',
+		'register',
+		'logout',
+		'forgot-password',
+		'forgot-password-email-sent',
+		'in-game-menubar-login',
+		'in-game-menubar-register',			
+		'in-game-menubar-main',
+		'in-game-menubar-activator',
+		'in-game-menubar-leaderboard',
+		'in-game-menubar-user-profile',
+	],
+	Login:{
+		hideAll:function(){
+			for(i=0;i<Facebook.windowIDs.length;i++){
+				$('#'+Facebook.windowIDs[i]).hide();
+			}		
+		},
+		statusChangeCallback:function(response){
+			console.log('statusChangeCallback:',response.status);
+			// The response object is returned with a status field that lets the
+			// app know the current login status of the person.
+			// Full docs on the response object can be found in the documentation
+			// for FB.getLoginStatus().
+			if (response.status === 'connected') {
+				// Logged into your app and Facebook.
+				Facebook.Login.getUser();
+			
+			} else if (response.status === 'not_authorized') {
+				console.log('Logged into facebook, but did not authorize our app ... do nothing now.')
+				// The person is logged into Facebook, but not your app.
+				// document.getElementById('status').innerHTML = 'Please log into this app.';			
+			} else {
+				console.log('Not logged into facebook ...')
+				// The person is not logged into Facebook, so we're not sure if
+				// they are logged into this app or not.
+				//document.getElementById('status').innerHTML = 'Please log into Facebook.';
+			}		
+		},
+		checkState:function(){
+			FB.getLoginStatus(function(response) {
+				Facebook.Login.statusChangeCallback(response);
+			});		
+		},
+		getSession:function(){
+			return localStorage.getItem('mjs_user_token_id');
+		},	
+		setupSession:function(token_id){
+			localStorage.setItem('mjs_user_token_id',token_id);		
+		},			
+		initialize:function(){
+			if(!this.getSession()){
+				console.log('No session found in client ... initializing facebook now ...')
+
+				window.fbAsyncInit = function(){
+					FB.init({
+						appId      : '385282288345363', // belongs to app MarketJS Whitelabel Platform
+						cookie     : true,  // enable cookies to allow the server to access the session
+						xfbml      : true,  // parse social plugins on this page
+						version    : 'v2.3' // use version 2.1
+					});
+									
+					// DOES THIS CALLBACK NEED TO HAPPEN ALL THE TIME? ONLY IF NOT LOGGED IN BEFORE
+					if(!localStorage.getItem('mjs_just_logged_out')){
+						FB.getLoginStatus(function(response) {
+							Facebook.Login.statusChangeCallback(response);
+						});							
+					}else{
+						console.log('Just logged out, do exactly nothing')
+					}
+					
+					// Parse for mobile
+					FB.XFBML.parse($('.login-facebook').get([0]))
+					FB.XFBML.parse($('.login-facebook').get([1]))
+				};
+	
+				 // Load the SDK asynchronously
+				 (function(d, s, id) {
+				   var js, fjs = d.getElementsByTagName(s)[0];
+				   if (d.getElementById(id)) return;
+				   js = d.createElement(s); js.id = id;
+				   js.src = "../../connect.facebook.net/en_US/sdk.js";
+				   fjs.parentNode.insertBefore(js, fjs);
+				 }(document, 'script', 'facebook-jssdk'));
+				 
+			}else{
+				console.log('Session found in client ... do not initialize facebook ...')
+			}
+		},
+		getUser:function(){
+			console.log('Welcome to Facebook!  Fetching your information.... ');	
+			var session = Facebook.Login.getSession();
+			
+			if(!session){			
+				console.log('checkIfLoggedIn: no existing session found...')
+			
+				// TO BE REMOVED LATER ON. GOOD FOR DEBUGGING.
+				$('#overlay-loading').show();
+										
+				FB.api('/me', {fields: 'name, email, id'}, function(response) {
+					console.log('response',response)
+					// Send this data to our server, see what to do (create new account, etc)
+					$.ajax({
+				        cache: false,
+				        crossDomain: true,
+				        type: 'POST',
+				        dataType: 'json',
+						data:{
+							'email':response.email,
+							'username':'FB-USER' + response.id,
+							'fbid':response.id,
+						},
+						url:'http://smartfun.club' + '/api/user/facebook/check' + '',
+			
+					}).done(function(response){
+						console.log(response);
+					
+						switch(response.status.code){
+							case 402:
+								console.log('User already exists ...')
+								
+								// Why setup the localsession?
+								Facebook.Login.setupSession(response.data.token_id);	
+								Facebook.Login.hideAll();
+												
+								break;							
+							case 200:
+								console.log('FB user newly created ... prompt for username now')
+							
+								// NEW WINDOW TO SET USERNAME
+								ChangeUsername.show();
+
+								// Update global variable
+								mjs_user_token_id = response.data.token_id;
+													
+								// IS THIS IMPORTANT
+								Facebook.Login.setupSession(response.data.token_id);
+
+								// Update portal domain
+								var old_href = '../index.html';
+								console.log('old_href:',old_href);
+								$('#in-game-menubar-main-portal-url').attr('href',old_href+'?mjs_user_token_id='+mjs_user_token_id.toString())
+
+								// Update header
+								$('#in-game-menubar-header-url').attr('href',old_href+'?mjs_user_token_id='+mjs_user_token_id.toString())
+								
+								break;
+						}
+
+						// Populate DOM via Ajax -> 
+						console.log('POPULATE DOM')				
+						$('#user-panel').html(response.data.template)	
+						
+						$('#overlay-loading').hide();		
+					});				
+				
+				});				
+			}		
+		},			
+	},
+	Logout: function(){
+		try{
+			FB.logout(function(response) {
+	        	// Person is now logged out
+				console.log('Logged out of Facebook app ...');
+				console.log('response:',response);
+	    	});				
+		}catch(err){
+			console.log(err);
+		}	
+	},
+}
+	
+$(document).ready(function(){
+	// Make the Facebook call here.
+	// Facebook.Login.initialize();
+});
+		// Change Username Script Template here
+var ChangeUsername = {
+	windowIDs:[
+		'change-username',
+		'login',
+		'logout',
+		'register',
+		'forgot-password',
+		'forgot-password-email-sent',
+		'in-game-menubar-login',
+		'in-game-menubar-register',		
+		'in-game-menubar-main',
+		'in-game-menubar-leaderboard',
+		'in-game-menubar-user-profile',
+	],		
+	getSession:function(){
+		return localStorage.getItem('mjs_user_token_id');
+	},	
+	centerDivVectically:function(div){
+		var h = div.height();
+		console.log('window.innerHeight',window.innerHeight)
+		
+		// DUNNO WHY THIS WORKS WELL FOR IPHONE
+		if(window.innerHeight < 400){
+			var m = (window.innerHeight-h)/2;
+		}else{
+			var m = (window.innerHeight-h)/2 - h/4;
+		}
+		
+		console.log(h,m)
+		div.css('margin-top',m);		
+	},			
+	show:function(){
+		this.hideAll();
+		$('#change-username').show();
+		this.centerDivVectically($('#box-change-username'));			
+	},
+	hide:function(){
+		$('#change-username').hide();
+	},
+	hideAll:function(){
+		for(i=0;i<this.windowIDs.length;i++){
+			$('#'+this.windowIDs[i]).hide();
+		}		
+		$('#activator').show();
+	},
+	removeLabelDiv:function(div){
+		$('label').remove()
+	},
+	removeValidAndErrorClass:function(div){
+		div.removeClass('valid');
+		div.removeClass('error')
+	},
+	prepareForm:function(){
+		console.log('prepare Change Username form ...')
+		
+		var newUsername;
+		
+		$('#change-username-form').ajaxForm({
+		    beforeSubmit: function(arr, $form, options) {
+				console.log(arr, $form, options);
+				
+				// Add to POST parameter
+				arr.push({
+					'name':'token-id',
+					'value':ChangeUsername.getSession(),
+				});
+				
+				newUsername = arr[0].value;
+				console.log('newUsername:',newUsername);
+				
+				return $('#change-username-form').valid();
+		    },
+
+		    beforeSend: function() {
+				$('#overlay-loading').show();
+		    },
+	
+			success: function(responseText, statusText) {
+				response = JSON.parse(responseText);
+				console.log('Change username response:',response);
+				
+				switch(response.status.code){
+					case 200:
+						ChangeUsername.hide();
+						var div = $('#change-username-username');
+						$('label').remove() // remove all messages
+						div.removeClass()
+						
+						// SOMEHOW THIS DOESN'T AFFECT USER PANEL OF MOBILE UI. CHECK					
+						console.log('POPULATE DOM')			
+						if(isMobile()){
+							$('#in-game-menubar-user-panel').html(response.data.template)										
+						}else{
+							$('#user-panel').html(response.data.template)	
+						}
+												
+						// NO NEED TO SETUP SESSION
+						// ChangeUsername.setSession(response.data.token_id)
+						
+						$('#change-username-username').val("")							
+						
+						break;
+					case 400:
+						var div = $('#change-username-username');
+						$('label').remove() // remove all messages
+						div.removeClass()
+						div.addClass('error');
+						div.after("<label for=\"change-username-username\" generated=\"true\" class=\"error\">" + response.status.message + "</label>")
+						break;
+				}
+			},
+		
+			complete: function(xhr) {
+				console.log('Change Username complete');
+				$('#overlay-loading').hide();
+			}		
+		});			
+	},
+}
+
+$('#change-username-form').validate({
+	rules: {
+		"change-username-username": {
+			alphanumeric:true,
+			required: true,
+			minlength:4,
+			maxlength:15,
+		},	
+	},
+	
+	highlight: function(label) {
+		$(label).removeClass('success');
+		$(label).addClass('error');
+	},
+	success: function(label) {
+		$(label).removeClass('error');
+		$(label).addClass('success');
+	}	
+});
+	
+$(document).ready(function(){
+	ChangeUsername.prepareForm();
+});
+		//BRANDING_USER_PROFILE_SCRIPT
+		//BRANDING_GENRE_LANDING_PAGE_SCRIPT
+		//BRANDING_SUBSCRIPTION_LANDING_PAGE_SCRIPT
+		//BRANDING_SUBSCRIPTION_LOGIN_SCRIPT
+		
+		//BRANDING_TERMS_OF_SERVICE_SCRIPT
+		//BRANDING_PRIVACY_POLICY_SCRIPT
+		// Reset Password Script Template here
+var ResetPassword = {
+	windowIDs:[
+		'reset-password',
+		'login',
+		'logout',
+		'register',
+		'forgot-password-email-sent',
+		'in-game-menubar-login',
+		'in-game-menubar-register',		
+		'in-game-menubar-main',
+		'in-game-menubar-leaderboard',
+		'in-game-menubar-user-profile',
+	],		
+	getSession:function(){
+		return localStorage.getItem('mjs_user_token_id');
+	},	
+	centerDivVectically:function(div){
+		var h = div.height();
+		console.log('window.innerHeight',window.innerHeight)
+		
+		// DUNNO WHY THIS WORKS WELL FOR IPHONE
+		if(window.innerHeight < 400){
+			var m = (window.innerHeight-h)/2;
+		}else{
+			var m = (window.innerHeight-h)/2 - h/4;
+		}
+		
+		console.log(h,m)
+		div.css('margin-top',m);		
+	},			
+	show:function(){
+		this.hideAll();
+		$('#reset-password').show();
+		this.centerDivVectically($('#box-reset-password'));			
+	},
+	hide:function(){
+		$('#reset-password').hide();
+	},
+	hideAll:function(){
+		for(i=0;i<this.windowIDs.length;i++){
+			$('#'+this.windowIDs[i]).hide();
+		}		
+		$('#activator').show();
+	},
+	removeLabelDiv:function(div){
+		$('label').remove()
+	},
+	removeValidAndErrorClass:function(div){
+		div.removeClass('valid');
+		div.removeClass('error')
+	},
+	prepareForm:function(){
+		console.log('prepare reset password form ...')
+		
+		var newUsername;
+		
+		$('#reset-password-form').ajaxForm({
+		    beforeSubmit: function(arr, $form, options) {
+				console.log(arr, $form, options);
+				
+				return $('#reset-password-form').valid();
+		    },
+
+		    beforeSend: function() {
+				$('#overlay-loading').show();
+		    },
+	
+			success: function(responseText, statusText) {
+				response = JSON.parse(responseText);
+				console.log('Reset password response:',response);
+				
+				switch(response.status.code){
+					case 200:
+						ResetPassword.hide();
+						var div = $('#reset-password-username');
+						$('label').remove() // remove all messages
+						div.removeClass()
+						
+						$('#reset-password-username').val("")	
+						
+						// Spawn popup
+						$('#popup-box-header').html(response.status.message.header)
+						$('#popup-box-contents').html(response.status.message.contents)
+						PopupBox.show();
+						
+						break;
+					case 404:
+						var div = $('#reset-password-username');
+						$('label').remove() // remove all messages
+						div.removeClass()
+						div.addClass('error');
+						div.after("<label for=\"reset-password-username\" generated=\"true\" class=\"error\">" + response.status.message + "</label>")
+						break;
+				}
+			},
+		
+			complete: function(xhr) {
+				console.log('Change Username complete');
+				$('#overlay-loading').hide();
+			}		
+		});			
+	},
+}
+
+$('#reset-password-form').validate({
+	rules: {
+		"reset-password-email": {
+			email:true,
+			required: true,
+		},	
+	},
+	
+	highlight: function(label) {
+		$(label).removeClass('success');
+		$(label).addClass('error');
+	},
+	success: function(label) {
+		$(label).removeClass('error');
+		$(label).addClass('success');
+	}	
+});
+	
+$(document).ready(function(){
+	ResetPassword.prepareForm();
+});
+		// Popup Box Script Template here
+var PopupBox = {
+	windowIDs:[
+		'popup-box',
+		'login',
+		'logout',
+		'register',
+		'forgot-password-email-sent',
+		'in-game-menubar-login',
+		'in-game-menubar-register',		
+		'in-game-menubar-main',
+		'in-game-menubar-leaderboard',
+		'in-game-menubar-user-profile',
+	],		
+	getSession:function(){
+		return localStorage.getItem('mjs_user_token_id');
+	},	
+	centerDivVectically:function(div){
+		var h = div.height();
+		console.log('window.innerHeight',window.innerHeight)
+		
+		// DUNNO WHY THIS WORKS WELL FOR IPHONE
+		if(window.innerHeight < 400){
+			var m = (window.innerHeight-h)/2;
+		}else{
+			var m = (window.innerHeight-h)/2 - h/4;
+		}
+		
+		console.log(h,m)
+		div.css('margin-top',m);		
+	},			
+	show:function(){
+		this.hideAll();
+		$('#popup-box').show();
+		this.centerDivVectically($('#box-popup-box'));			
+	},
+	hide:function(){
+		$('#popup-box').hide();
+	},
+	hideAll:function(){
+		for(i=0;i<this.windowIDs.length;i++){
+			$('#'+this.windowIDs[i]).hide();
+		}		
+		$('#activator').show();
+	},
+	removeLabelDiv:function(div){
+		$('label').remove()
+	},
+	removeValidAndErrorClass:function(div){
+		div.removeClass('valid');
+		div.removeClass('error')
+	},
+}
+		//BRANDING_CONTACT_PAGE_SCRIPT
+		
+		// For the API
+		var mjs_portal_id = '5763614147346432';
+		
+		// DO WE NEED THIS?
+		var InGameMenubarAuth = {
+	checkIfLoggedIn:function(token_id){
+		$.ajax({
+	        type: 'GET',
+	        dataType: 'json',
+			url: 'http://smartfun.club' + '/api/login/check/' + token_id + '',
+            beforeSend:function (){
+				console.log('InGameMenubarAuth.checkIfLoggedIn: beforeSend')
+			},			
+		}).done(function(response){
+			console.log(response)								
+			$('#in-game-menubar-user-panel').html(response.data.template);	
+			
+			if(response.status.code==200){				
+				if(mjs_user_token_id){
+					// Update portal domain
+					var old_href = '../index.html';
+					console.log('old_href:',old_href);
+					
+					$('#in-game-menubar-main-portal-url').attr('href',old_href+'?mjs_user_token_id='+mjs_user_token_id.toString());				
+
+					// Update header
+					$('#in-game-menubar-header-url').attr('href',old_href+'?mjs_user_token_id='+mjs_user_token_id.toString())					
+				}
+
+			}
+		});			
+	},	
+}
+
+// GLOBAL
+var mjs_user_token_id;
+
+// getQueryVariable
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1); // search in parent
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+}
+
+// In Game Menubar Script Template here
+var InGameMenubar = {
+	enabled:eval('false'),
+	
+	activateLeaderboard:function(){
+		$('#in-game-menubar-main').hide()
+		$('#in-game-menubar-leaderboard').show();		
+	},
+	
+	showActivator:function(){
+		$('#in-game-menubar-activator').show();
+	},
+	activate: function(){
+		// Resolve in pixels
+		var height = $('#in-game-menubar-main').css('height')
+		if(height=='0px'){
+			console.log('weird bug with 0px ... forcing something')
+			$('#in-game-menubar-main').css('height',window.innerHeight*0.6)
+		}
+		
+		$('#in-game-menubar-activator').hide(200);
+		//$('#in-game-menubar-main').css('top',$('#in-game-menubar-activator').css('top'))
+		$('#in-game-menubar-main').show(200);
+	},		
+	deactivate: function(){
+		$('#in-game-menubar-activator').show(200);
+		$('#in-game-menubar-main').hide(200);
+	},
+}
+
+var Cookie = {
+	IsEnabled: function(){
+		return navigator.cookieEnabled ||
+	        ("cookie" in document && (document.cookie.length > 0 ||
+	        (document.cookie = "mjstestcookie").indexOf.call(document.cookie, "mjstestcookie") > -1));	
+	},	
+	DoesExist: function(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+		var value;
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1);
+	        if (c.indexOf(name) == 0){
+				return true;
+			} 
+	    }
+	    return false;
+	},
+	// TEST
+	SetFiveSecondCookie: function(cname) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (5*1000));
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + "yes" + "; " + expires;
+	},
+	SetHourlyCookie: function(cname) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (1*60*60*1000));
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + "yes" + "; " + expires;
+	},
+	SetDailyCookie: function(cname) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (1*24*60*60*1000));
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + "yes" + "; " + expires;
+	},
+ 	SetMonthlyCookie: function(cname) { // averages to 30 days
+	    var d = new Date();
+	    d.setTime(d.getTime() + (1*30*24*60*60*1000));
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + "yes" + "; " + expires;
+	},		
+	SetYearlyCookie: function(cname) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (1*365*24*60*60*1000)); // averages to 365 days
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + "yes" + "; " + expires;
+	},			
+}
+
+var MarketJS = {
+	Log:{
+		Game:function(metric_name){ // Eg: MarketJS.Log.Game('Initialize'), MarketJS.Log.Game('EndGame'), MarketJS.Log.Game('LaunchGame)
+			console.log('MarketJS API Log Game Event: ',metric_name)
+			$.ajax({
+		        type: 'GET',
+				dataType:'json',
+				url: 'http://smartfun.club/api/log/game/' + metric_name + '/' + mjs_game_id + '?mjs_user_token_id=' + mjs_user_token_id,		
+			}).done(function(response){
+				console.log(response.status.code);							
+			});				
+		},
+		Portal:function(metric_name){ // Eg: MarketJS.Log.Portal('UserLogin'), MarketJS.Log.Portal('UserRegister')
+			console.log('MarketJS API Log Portal Event: ',metric_name)
+			$.ajax({
+		        type: 'POST',
+				dataType:'json',
+				url: 'http://smartfun.club/api/log/portal/' + metric_name + '/' + mjs_portal_id,		
+			}).done(function(response){
+				console.log(response.status.code);							
+			});				
+		},
+		TimeSpent:function(metric_value){
+			console.log('MarketJS API Log Time Spent: ',metric_value)
+			var metric_name = 'TimeSpent';
+			$.ajax({
+		        type: 'POST',
+				data:{'metric_value':metric_value},
+				dataType:'json',
+				url: 'http://smartfun.club/api/log/portal/' + metric_name + '/' + mjs_portal_id,		
+			}).done(function(response){
+				console.log(response.status.code);							
+			});				
+		},	
+		// Specially developed
+		UniqueVisitor:function(){
+			console.log('MarketJS API Log Unique Visitor Event')
+
+			// if unique_visitor_params[xxxx] = 'True', means it will be logged in the server			
+			var unique_visitor_params = {
+				'singular':'True', // to invoke singular counter increments. Special case
+				'hourly':'False',
+				'daily':'False',
+				'monthly':'False',
+				'yearly':'False',
+			}
+			
+			var submit_hourly_cookie = false;
+			var submit_daily_cookie = false;
+			var submit_monthly_cookie = false;
+			var submit_yearly_cookie = false;
+			
+			if(Cookie.IsEnabled()){
+				/*
+				if(!Cookie.DoesExist('mjstest')){ // If cookie does not exist
+					unique_visitor_params['hourly'] = 'True';
+					Cookie.SetFiveSecondCookie('mjstest');
+					submit_hourly_cookie = true;
+				}*/
+				
+				if(!Cookie.DoesExist('mjshourly')){ // If cookie does not exist
+					unique_visitor_params['hourly'] = 'True';
+					Cookie.SetHourlyCookie('mjshourly');
+					submit_hourly_cookie = true;
+				}
+
+				if(!Cookie.DoesExist('mjsdaily')){
+					unique_visitor_params['daily'] = 'True';
+					Cookie.SetDailyCookie('mjsdaily');
+					submit_daily_cookie = true;
+				}
+
+				if(!Cookie.DoesExist('mjsmonthly')){
+					unique_visitor_params['monthly'] = 'True';
+					Cookie.SetMonthlyCookie('mjsmonthly');					
+					submit_monthly_cookie = true;
+				}
+
+				if(!Cookie.DoesExist('mjsyearly')){
+					unique_visitor_params['yearly'] = 'True';
+					Cookie.SetYearlyCookie('mjsyearly');
+					submit_yearly_cookie = true;
+				}																
+			}	
+
+			/* SAMPLE:
+			unique_visitor_params:{
+				hourly:hourly, // 'True'
+				daily:daily,	// 'False'
+				monthly:monthly, // 'False'
+				yearly:yearly, // 'False'
+			},
+			*/						
+			if(submit_hourly_cookie || submit_daily_cookie || submit_monthly_cookie || submit_yearly_cookie){
+				console.log('Submitting ...')
+				$.ajax({
+			        type: 'POST',
+					dataType:'json',
+					data:unique_visitor_params,
+					url: 'http://smartfun.club/api/log/portal/' + 'UniqueVisitor' + '/' + mjs_portal_id,
+				}).done(function(response){
+					console.log(response.status.code);							
+				});					
+			}else{
+				console.log('Not submitting ... all data is current')
+			}					
+		},
+	},
+	
+	Leaderboard:{
+		SubmitScore:function(points){ // (token_id,game_id,points)
+			// what's the drawback? users can post as often as they want, but we have a filter for frequency and value
+			if(!mjs_user_token_id){
+				console.log('No user session detected. No score submitted')
+				return
+			}
+			$.ajax({
+		        type: 'POST',
+				data:{
+					'token_id':mjs_user_token_id,//token_id,
+					'game_id':mjs_game_id,//game_id,
+					'points':points,
+				},
+		        dataType: 'json',
+				url: 'http://smartfun.club/leaderboard/write',		
+			}).done(function(response){
+				console.log(response);
+				if(response.status.code==200){
+					console.log('SUCCESSFUL')
+				}else{
+					console.log('FAILED')
+				}							
+			});			
+		},			
+	}
+}
+
+// Steps
+
+// Good thing we only have mobile and non-mobile
+function isMobile(){
+	var userAgent = navigator.userAgent;
+	var list = ['iPhone','iPad','android','Android','Windows Phone','Silk','BB10','PlayBook'];
+	for(i=0;i<list.length;i++){
+		if(userAgent.indexOf(list[i])!=-1){
+			return true
+		}
+	}
+	return false;
+}
+
+// ENABLER
+// temporaryly use localStorage, instead of jStorage
+$(document).ready(function(){
+	if(isMobile() && InGameMenubar.enabled){
+		InGameMenubar.showActivator();
+	}
+	
+	mjs_user_token_id = getQueryVariable('mjs_user_token_id');
+	if(mjs_user_token_id){
+		console.log('mjs_user_token_id found in url param')
+
+		if(isMobile() && InGameMenubar.enabled){
+			InGameMenubarAuth.checkIfLoggedIn(mjs_user_token_id);
+		}		
+	}else{
+		if(localStorage){
+			mjs_user_token_id = localStorage.getItem('mjs_user_token_id')
+			
+			if(isMobile() && InGameMenubar.enabled){
+				if(mjs_user_token_id){
+					console.log('mjs_user_token_id found in localStorage');
+					InGameMenubarAuth.checkIfLoggedIn(mjs_user_token_id)
+				}else{
+					console.log('No user token id found in localStorage ... perform a dummy check')
+					InGameMenubarAuth.checkIfLoggedIn('12345678') // SOMEHOW THIS NEEDS TO BE HERE
+				}				
+			}			
+			
+		}else{
+			console.log('no localstorage found')
+		}
+	}	
+});
+
+/* OBSOLETE
+// Record TimeSpent
+var TimeSpent = 0;
+window.setInterval(function () {TimeSpent+=1}, 1000);
+var isSmartphone = eval('false');
+var isTablet = eval('false');
+var isDesktop;
+if(isSmartphone || isTablet){
+	isDesktop = false;
+}else{
+	isDesktop = true;
+}
+if(!isDesktop){
+	window.setInterval(function () {
+		MarketJS.Log.TimeSpent(TimeSpent); // NEEDS TO BE OPTIMIZED, TO REDUCE LOAD
+		TimeSpent = 0;					
+	}, 31000);	
+}
+*/		
+		
+		//BRANDING_BASE_SCRIPT
+		
+		// Record unique visitor
+		//MarketJS.Log.Portal('PageView');
+		//MarketJS.Log.UniqueVisitor();		
+		
+		// Record TimeSpent
+		var TimeSpent = 0;
+		var canSubmitData = true;
+
+        // WORK IN PROGRESS - PLEASE DO NOT EDIT
+        var _CLIENT_INCOMING_ID;
+        var _CLIENT_API = {
+        	checkUser:function(id){
+        		$.ajax({
+        	        type: 'GET',
+        	        dataType: 'json',
+        			url: 'http://smartfun.club' + '/insert_api_path' + id,
+                    beforeSend:function (){
+        				console.log('beforeSend')
+        			},			
+        		}).done(function(response){
+        			console.log(response)
+        			console.log(response.status.message)
+        			
+        			switch(response.status.code){
+        			    // EDIT THE CASES APPROPRIATELY
+        				case 200: // NEW USER
+        				    // Inject with the incoming id
+        				    //$('#register-user-custom-id').attr('value',_CLIENT_INCOMING_ID);
+        					//Register.show();
+        					break;
+        				case 201: // EXISTING USER and logged in. Do nothing
+        					break;		
+        				case 202: // EXISTING USER , not logged in. We popup login form
+        					// NEW: AUTO LOGIN ON BACKEND
+						    // Populate DOM via Ajax -> 
+						    //console.log('POPULATE DOM')				
+						    //$('#user-panel').html(response.data.template)
+        					break;        					
+        				case 204:
+        				    _CLIENT_API.redirectUser();
+        				case 404: // INVALID USER
+        					_CLIENT_API.redirectUser();
+        					break;
+        				case 500: // INVALID USER
+        					_CLIENT_API.redirectUser();
+        					break;        					
+        				default:
+        				    _CLIENT_API.redirectUser();
+        			}
+        			
+        		});			
+        	},	
+        	redirectUser:function(){
+        	    console.log('Redirecting user ..')
+        	    
+        	    // TEMP
+        	    // window.location.href = ''; 
+        	},
+        }		
+
+        $(document).ready(function(){
+        	// Assign
+        	/*
+        	_TOKEN_NAME = '';
+        	_CLIENT_INCOMING_ID = getQueryVariable(_TOKEN_NAME);
+        	if(_CLIENT_INCOMING_ID){
+        		console.log('_CLIENT_INCOMING_ID found in url param:',_CLIENT_INCOMING_ID)
+        		_CLIENT_API.checkUser(_CLIENT_INCOMING_ID);
+        	}else{
+        	    console.log('_CLIENT_INCOMING_ID not found')
+        	    _CLIENT_API.redirectUser();
+        	}
+        	*/
+        });	
+        
+	</script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117180225-25"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117180225-25');
+
+_SETTINGS.MoreGames.NewWindow=false;
+
+</script>
+
+	
+</body>
+
+<!-- Mirrored from smartfun.club/category/strategy by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2023 13:48:35 GMT -->
+</html>
