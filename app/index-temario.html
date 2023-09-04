@@ -28,15 +28,50 @@
 </head>
 
 <body class="bg-body-tertiary">
+  
+
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-black p-4">
       <center>
+
+        <style>
+          .carta {
+            border-radius: 8px;
+          }
+
+          .mi-div {
+            position: relative;
+          }
+
+          .carousel img {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+          }
+
+          .texto {
+            width: 70%;
+          }
+
+
+          .imagee {
+            max-width: 100%;
+            height: auto;
+          }
+
+          .fondito {
+            background-color: #388e0635;
+          }
+        </style>
+
 
         <div class="post-body">
           <ol>
             <li>
               <div>
-                <p class="text-center text-white">Herramientas</p>
+                <a href="herramientas/index.html">
+                  <p class="text-center text-white">Herramientas</p>
+                </a>
               </div>
             </li>
 
@@ -65,10 +100,10 @@
       </center>
     </div>
   </div>
-  <nav class="navbar navbar-dark bg-black pt-3">
+  <nav class="navbar navbar-dark seccion-inicio pt-3">
     <div class="container-fluid jeader">
       <b>
-        <h1 class="h3"><i class="fas fa-atom"></i> Biófimex</h1>
+       <a href="https://biofimex.github.io/app/inicio.html"> <h1 class="h3"><i class="fas fa-atom"></i> Biófimex</h1> </a>
       </b>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
@@ -77,61 +112,46 @@
       </button>
     </div>
   </nav>
+  
 
-  <!-- incio slide-->
-  <section mt-2>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="header-slide/1.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-md-block">
-            <h5>Sabias que?</h5>
-            <p>La dinamita contiene maní como un ingrediente.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="header-slide/2.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-md-block">
-            <h5>Sabias que?</h5>
-            <p>
-              La fructosa (azúcar contenida en frutas) es mucho más dulce que
-              el azúcar de caña.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="header-slide/3.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-md-block">
-            <h5>Sabias que?</h5>
-            <p>
-              Debido a su PH, los jugos gástricos son más ácidos que el zumo
-              de limón.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-  <br>
+<div class="seccion-inicio">
 
+
+<div style="height:30px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+    style="height: 100%; width: 100%;">
+    <path d="M-14.39,23.20 C163.94,233.39 373.87,-14.28 508.74,43.92 L500.00,150.00 L-39.21,182.08 Z"
+      style="stroke: none; fill: #F8F9FA ;"></path>
+  </svg></div>
+
+</div>
+<br>
+
+<style>
+  .carousel img {
+    border-radius: 15px;
+  }
+
+  .seccion-inicio {
+    background-color: #000000;
+  }
+
+  .loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .loader-container.fade-out {
+    top: -120%;
+  }
+</style>
 
 
 
