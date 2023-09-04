@@ -1,0 +1,200 @@
+{
+  "en":
+  {
+    "settings": "Settings",
+    "language": "Language",
+    "temperature" : "Temperature",
+    "display" : "Display",
+
+    "alkali metal": "alkali metal",
+    "alkaline earth metal": "alkaline earth metal",
+    "transition metal": "transition metal",
+    "post transition metal": "post transition metal",
+    "metalloid": "metalloid",
+    "other nonmetal": "other nonmetal",
+    "halogen": "halogen",
+    "noble gas": "noble gas",
+    "lanthanide": "lanthanide",
+    "actinide": "actinide"
+  },
+  "de":
+  {
+    "settings": "Einstellungen",
+    "language": "Sprache",
+    "temperature" : "Temperatur",
+    "display" : "Anzeige",
+
+    "alkali metal": "Alkalimetall",
+    "alkaline earth metal": "Erdalkalimetall",
+    "transition metal": "Übergangsmetall",
+    "post transition metal": "Post-Übergangsmetall",
+    "metalloid": "Metalloid",
+    "other nonmetal": "Andere Nicht-Metalle",
+    "halogen": "Halogen",
+    "noble gas": "Edelgas",
+    "lanthanide": "Lanthanide",
+    "actinide": "Actinide"
+  },
+  "fr":
+  {
+    "settings": "Paramètres",
+    "language": "Langue",
+    "temperature" : "Température",
+    "display" : "Display",
+
+    "alkali metal": "Métal alcalin",
+    "alkaline earth metal": "métal alcalino-terreux",
+    "transition metal": "métal de transition",
+    "post transition metal": "métal post-transition",
+    "metalloid": "métalloïde",
+    "other nonmetal": "autre non métallique,",
+    "halogen": "halogène",
+    "noble gas": "gaz noble",
+    "lanthanide": "lanthanide",
+    "actinide": "actinide"
+  },
+  "pt-br":
+  {
+    "settings": "Configurações",
+    "language": "idioma",
+    "temperature" : "temperatura",
+    "display" : "Display",
+
+    "alkali metal": "Metal alcalino",
+    "alkaline earth metal": "metal alcalino-terroso",
+    "transition metal": "metal de transição",
+    "post transition metal": "pós-metal de transição",
+    "metalloid": "metalóides",
+    "other nonmetal": "outros não metálicos",
+    "halogen": "halogéneos",
+    "noble gas": "gases nobres",
+    "lanthanide": "lantanídeos",
+    "actinide": "actinídeos"
+  },
+  "sp":
+  {
+    "settings": "Ajustes",
+    "language": "idioma",
+    "temperature" : "temperatura",
+    "display" : "Display",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "tk":
+  {
+    "settings": "ayarlar",
+    "language": "dil",
+    "temperature" : "sıcaklık",
+    "display" : "Display",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "hi":
+  {
+    "settings": "सेटिंग्स",
+    "language": "भाषा",
+    "temperature" : "तापमान",
+    "display" : "Display",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "ch":
+  {
+    "settings": "设置",
+    "language": "语言",
+    "temperature" : "温度",
+    "display" : "Display",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "cz":
+  {
+    "settings": "nastavení",
+    "language": "český",
+    "temperature" : "teplota",
+    "display" : "Display",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "ru":
+  {
+    "settings": "настройки",
+    "language": "язык",
+    "temperature" : "температура",
+    "display" : "Display",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "pl":
+  {
+    "settings": "Ustawienia",
+    "language": "Język",
+    "temperature" : "Temperatura",
+    "display" : "Display",
+
+    "alkali metal": "metal alkaliczny",
+    "alkaline earth metal": "metal ziem alkalicznych",
+    "transition metal": "metal przejściowy",
+    "post transition metal": "metal bloku p",
+    "metalloid": "metaloid",
+    "other nonmetal": "inny niemetal",
+    "halogen": "halogeny",
+    "noble gas": "gaz szlachetny",
+    "lanthanide": "lantanowiec",
+    "actinide": "aktynowiec"
+  }
+}
