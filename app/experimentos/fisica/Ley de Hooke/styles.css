@@ -2,8 +2,20 @@
   font-family: "Poppins", sans-serif; !important
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kanit&display=swap');
+
+h1{
+  font-family: 'Inconsolata', monospace !important;
+  margin-left: 3%;
+
+}
+
 a {
   text-decoration: none; !important
+}
+
+p {
+  text-align: justify;
 }
 
 .loader {
@@ -171,6 +183,7 @@ a {
   width: ;
 }
 
+
 .fondo{
   background: #5cc9ff;
 }
@@ -207,7 +220,11 @@ a {
 
 .tiitulos{
   color: #5cc9ff;
+  margin-left: 3%;
 }
+
+
+
 
 
 
