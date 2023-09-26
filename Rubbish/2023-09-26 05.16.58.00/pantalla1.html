@@ -25,43 +25,76 @@
 
   <body>
 
-<div class="fondo pt-3 pb-3">
-    <h1 class="text-white">Modelo de átomo con materiales reciclados</h1>
+<div class="fondo pt-3 pb-2">
+    <h1 class="text-white">Nombre del experimento</h1>
 </div>
-
-<br>
-
-
-<h2 class="tiitulos animate__animated animate__headShake">Conclusión</h2>
-<br>
-
-<div class="container animate__animated animate__fadeIn animate__delay-1s"><p>Con este modelo de átomo casero, podrás visualizar mejor la estructura básica de un átomo y comprender cómo los electrones giran alrededor del núcleo. Esta herramienta te ayudará a estudiar los conceptos fundamentales de la química, como la configuración electrónica y la distribución de electrones en los distintos niveles de energía de un átomo. ¡Es una manera práctica y educativa de aprender sobre la estructura atómica!
-</p></div>
-
-
+<br><br>
 <center>
-  <div class="animate__animated animate__fadeIn animate__delay-2s">
+    <div class="animate__animated animate__bounce animate animate__delay-2s">
 <div class="oval">
 <img src="sprout.png" alt="" srcset="">
 </div>
 </div>
 </center>
-
+<br>
+<div class="container animate__animated animate__fadeIn animate__delay-3s">
+<p>Descripcion</p>
+</div>
 
 <br>
 
-<br>
 <center>
-  
-<div class="animate__animated animate__fadeIn animate__delay-3s text-center">
-
+    <a class="text-white pt-2" href="pantalla2.html">
+<div class="animate__animated animate__fadeIn animate__delay-4s text-center">
+<img width="40%" src="btn-materiales.png" alt="" srcset="">
 <a href="https://biofimex.github.io/app/inicio.html"><p class="text-center text-success">Regresar a inicio</p></a>
 </div>
 </a>
 </center>
 
 
+
+<!-- loader  -->
+<div class="loader-container">
+  <img src="https://raw.githubusercontent.com/biofimex/biofimex.github.io/main/images/loader.gif" alt="">
+</div>
+
+<style>
+  .loader-container{
+  position: fixed;
+  top:0; left:0;
+  z-index: 10000;
+  background:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}
+
+.loader-container.fade-out{
+  top:-120%;
+}
+
+</style>
+
+<script>
+  function loader(){
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+  setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();
+</script>
+
+
+
+
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
   </body>
 </html>
