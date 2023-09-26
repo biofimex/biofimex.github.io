@@ -25,53 +25,76 @@
 
   <body>
 
-<div class="fondo pt-3 pb-3">
-    <h1 class="text-white">Modelo de átomo con materiales reciclados
-    </h1>
+<div class="fondo pt-3 pb-2">
+    <h1 class="text-white">Nombre del experimento</h1>
 </div>
-
-<br>
-
-
-<h2 class="tiitulos animate__animated animate__headShake">Paso 2</h2>
-<br>
-
-<div class="container animate__animated animate__fadeIn animate__delay-1s"><p>Usa bolitas de papel de aluminio o bolitas de plastilina para representar los electrones alrededor del núcleo. Puedes usar diferentes colores para representar electrones de distintas capas o niveles de energía. <br><br>
-  Inserta los palillos de dientes o palos de brocheta en la tapa de botella para mantener los electrones en su lugar alrededor del núcleo.
-
-</p></div>
-
-
+<br><br>
 <center>
-  <div class="animate__animated animate__fadeIn animate__delay-2s">
-    <video autoplay loop muted>
-      <source src="a2.mov" type="video/mp4">
-    </video>
-  
-    <style>
-      video {
-        width: 70%;
-      }
-    </style>
+    <div class="animate__animated animate__bounce animate animate__delay-2s">
+<div class="oval">
+<img src="sprout.png" alt="" srcset="">
+</div>
 </div>
 </center>
-
+<br>
+<div class="container animate__animated animate__fadeIn animate__delay-3s">
+<p>Descripcion</p>
+</div>
 
 <br>
 
-<br>
 <center>
-  <a class="text-white" href="conclusion.html">
-<div class="animate__animated animate__fadeIn animate__delay-3s text-center">
-<img width="40%" src="conclusion.png" alt="" srcset="">
-<a href="pantalla3.html"><p class="text-center text-success">Sección anterior</p></a>
+    <a class="text-white pt-2" href="pantalla2.html">
+<div class="animate__animated animate__fadeIn animate__delay-4s text-center">
+<img width="40%" src="btn-materiales.png" alt="" srcset="">
 <a href="https://biofimex.github.io/app/inicio.html"><p class="text-center text-success">Regresar a inicio</p></a>
 </div>
 </a>
 </center>
 
 
+
+<!-- loader  -->
+<div class="loader-container">
+  <img src="https://raw.githubusercontent.com/biofimex/biofimex.github.io/main/images/loader.gif" alt="">
+</div>
+
+<style>
+  .loader-container{
+  position: fixed;
+  top:0; left:0;
+  z-index: 10000;
+  background:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}
+
+.loader-container.fade-out{
+  top:-120%;
+}
+
+</style>
+
+<script>
+  function loader(){
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+  setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();
+</script>
+
+
+
+
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
   </body>
 </html>
