@@ -1,8 +1,0 @@
--qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://smartfun.club/serve?portal_id=5763614147346432&game_id=5246798932213760&branding_id=5734046899372032&ad_id=4865470182195200&portal_localization_id=5092721263902720 -O1 "C:\My Web Sites\murcielagos" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
-File generated automatically on Fri, 01 Sep 2023 07:38:42, do NOT edit
-
-To update a mirror, just launch httrack without any parameters
-The existing cache will be used (and modified)
-To have other options, retype all parameters and launch HTTrack
-To continue an interrupted mirror, just launch httrack without any parameters
-
