@@ -5,7 +5,7 @@ import shutil
 ruta_archivo_origen = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\plantilla\styles.css'
 
 # Ruta de la carpeta principal donde quieres copiar el archivo a todas las subcarpetas
-carpeta_principal = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia'
+carpeta_principal = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\matemática'
 
 # Recorriendo todas las subcarpetas de la carpeta principal y copiando el archivo en cada una
 for ruta_directorio_raiz, directorios, archivos in os.walk(carpeta_principal):

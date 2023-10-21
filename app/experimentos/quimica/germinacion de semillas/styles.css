@@ -2,8 +2,20 @@
   font-family: "Poppins", sans-serif; !important
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kanit&display=swap');
+
+h1{
+  font-family: 'Inconsolata', monospace !important;
+  margin-left: 3%;
+
+}
+
 a {
   text-decoration: none; !important
+}
+
+p {
+  text-align: justify;
 }
 
 .loader {
@@ -172,13 +184,15 @@ a {
 }
 
 .fondo{
-  background: #34B15A;
+  background: linear-gradient(to bottom, #91C020, #63B134); /* Cambia los colores como desees */
+
 }
 
 .oval {
   width: 60%;
   height: 300px;
-  background-color: #34B15A;
+  background: linear-gradient(to bottom, #91C020, #63B134); /* Cambia los colores como desees */
+
   -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -206,7 +220,11 @@ a {
 }
 
 .tiitulos{
-  color: #34B15A;
+  background: linear-gradient(to bottom, #91C020, #63B134); /* Cambia los colores como desees */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 3%;
 }
 
 

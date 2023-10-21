@@ -183,15 +183,16 @@ p {
   width: ;
 }
 
-
 .fondo{
-  background: #5cc9ff;
+  background: linear-gradient(to bottom, #91C020, #63B134); /* Cambia los colores como desees */
+
 }
 
 .oval {
   width: 60%;
   height: 300px;
-  background-color: #5cc9ff;
+  background: linear-gradient(to bottom, #91C020, #63B134); /* Cambia los colores como desees */
+
   -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -211,7 +212,7 @@ p {
 }
 
 .boton{
-  background: #5cc9ff;
+  background: #34B15A;
   color: #fff;
   width: 200px;
   height: 40px;
@@ -219,12 +220,12 @@ p {
 }
 
 .tiitulos{
-  color: #5cc9ff;
+  background: linear-gradient(to bottom, #91C020, #63B134); /* Cambia los colores como desees */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-left: 3%;
 }
-
-
-
 
 
 
