@@ -9,6 +9,9 @@
 }
 /* Establece la fuente Poppins Regular (400) como la fuente predeterminada para todo el texto */
 
+p{
+  text-align: justify;
+}
 
 ul, ol {
   list-style: none;
@@ -30,9 +33,18 @@ ul, ol {
   font-size: 20px;
 }
 
-p{
-  text-align: justify;
+
+.saber-p{
+  background-color: #ffcf0f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+.saber-p p{
+  font-size: 20px;
+}
+
 
 a {
   text-decoration: none;
