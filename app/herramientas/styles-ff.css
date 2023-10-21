@@ -1,20 +1,21 @@
-*{
-  font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Poppins", sans-serif; !important
 }
 
-/* Aplica la fuente Poppins Bold (700) solo a los elementos h1 */
-.jeader h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kanit&display=swap');
+
+h1{
+  font-family: 'Inconsolata', monospace !important;
+  margin-left: 3%;
+
 }
-/* Establece la fuente Poppins Regular (400) como la fuente predeterminada para todo el texto */
-
-
-
-
 
 a {
-  text-decoration: none;
+  text-decoration: none; !important
+}
+
+p {
+  text-align: justify;
 }
 
 .loader {
@@ -163,7 +164,6 @@ a {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  overflow-x: scroll;
   overflow-y: hidden;
   margin-bottom: 10px;
   display: -webkit-box;
@@ -180,45 +180,59 @@ a {
 
 .post-body img{
   border-radius: 5px;
-  width: 150px;
+  width: ;
 }
 
-
-.jeader {
-  background: #62b134;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.fondo{
+  background: #34B15A;
 }
 
-.jeaderr {
-  background: #62b134;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.fa-atom {
-  color: #62b134;
-}
-
-
-
-
-
-
-swiper-container {
-  width: 100%;
-
-  padding-bottom: 50px;
-}
-
-swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
+.oval {
+  width: 60%;
   height: 300px;
+  background-color: #34B15A;
+  -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
-swiper-slide img {
-  display: block;
-  width: 100%;
+.oval img{
+  width: 60%;
+  height: 180px;
+  margin-top: 25%;
+}
+
+
+%test {
+  position: absolute;
+	content: '';
+	transition: all .5s;
+}
+
+.boton{
+  background: #34B15A;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.tiitulos{
+  color: #34B15A;
+  margin-left: 3%;
+}
+
+
+
+
+.gridas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.material{
+  background: #57ff8c;
+  height: 50%;
+  border-radius: 12%;
 }
