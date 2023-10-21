@@ -66,8 +66,8 @@
 
         <a href="herramientas/index.html"><p>Herramientas digitales</p></a>
         <a href="go:foro"><p>Foro</p></a>
-        <a href="inicio.css"><p>Pruebas</p></a>
-        <a href="pruebas.html"><p>MiniCientificos</p></a>
+        <a href="pruebas.html"><p>Pruebas</p></a>
+        <a href="minicientificos/index.html"><p>MiniCientificos</p></a>
         <a href="cursos.html"><p>Cursos</p></a>
 
 
@@ -81,7 +81,7 @@
   <nav class="navbar navbar-dark seccion-inicio pt-3">
     <div class="container-fluid jeader">
       <b>
-        <h1 class="h3"><i class="fas fa-atom jeader"></i> Biófimex</h1>
+        <h1 class="h3"><i class="fas fa-atom"></i> Biófimex</h1>
       </b>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
@@ -168,10 +168,55 @@
   </script>
 
 
+
+
+
+<style>
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+</style>
+
+
+<swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide>
+      <img src="slide1.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="slide2.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="slide4.jpg.crdownload" />
+    </swiper-slide>
+   
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+
+
+
+
   <center>
     <div class="vtem-vreg mt-4">
     <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
-      <button type="button" class="btn btn-success">Vista regular</button>
+      <button type="button" class="btn bt-reg">Vista regular</button>
 
 
 

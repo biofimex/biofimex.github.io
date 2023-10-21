@@ -213,10 +213,12 @@ a {
 }
 
 .fa-atom{
-  background: linear-gradient(to right, #91C020, #63B134); /* Cambia los colores como desees */
+  color:  #91C020 !important; /* Cambia los colores como desees */
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+.bt-reg{
+  background-color: #8FBF21;
 }
 
 
