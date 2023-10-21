@@ -1,15 +1,18 @@
 import os
 import shutil
 
-# Ruta del archivo que quieres copiar
-ruta_archivo_origen = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\plantilla\styles.css'
+ruta_archivo_origen = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia\estudio de la presencia de clorofila en las hojas\styles.css'
 
-# Ruta de la carpeta principal donde quieres copiar el archivo a todas las subcarpetas
-carpeta_principal = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\matemática'
+carpeta_principal = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia'
 
-# Recorriendo todas las subcarpetas de la carpeta principal y copiando el archivo en cada una
 for ruta_directorio_raiz, directorios, archivos in os.walk(carpeta_principal):
     for directorio in directorios:
         ruta_destino = os.path.join(ruta_directorio_raiz, directorio, os.path.basename(ruta_archivo_origen))
-        shutil.copy(ruta_archivo_origen, ruta_destino)
-        print(f"Archivo copiado en {ruta_destino}")
+        if not os.path.exists(ruta_destino):
+            try:
+                shutil.copy2(ruta_archivo_origen, ruta_destino)
+                print(f"Archivo copiado en {ruta_destino}")
+            except shutil.SameFileError:
+                print(f"Error: {ruta_archivo_origen} y {ruta_destino} son el mismo archivo.")
+        else:
+            print(f"Error: {ruta_destino} ya existe.")
