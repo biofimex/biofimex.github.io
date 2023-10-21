@@ -1,18 +1,19 @@
 import os
 import shutil
 
-ruta_archivo_origen = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia\estudio de la presencia de clorofila en las hojas\styles.css'
+# Ruta del archivo que quieres copiar
+archivo_origen = r"C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia\estudio de la presencia de clorofila en las hojas\styles.css"
 
-carpeta_principal = r'C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia'
+# Ruta de la carpeta principal donde quieres pegar el archivo en sus subcarpetas
+carpeta_principal = r"C:\Users\proto\Desktop\Biófimex Hackathon\biofimex.github.io\app\experimentos\biologia"
 
-for ruta_directorio_raiz, directorios, archivos in os.walk(carpeta_principal):
-    for directorio in directorios:
-        ruta_destino = os.path.join(ruta_directorio_raiz, directorio, os.path.basename(ruta_archivo_origen))
-        if not os.path.exists(ruta_destino):
-            try:
-                shutil.copy2(ruta_archivo_origen, ruta_destino)
-                print(f"Archivo copiado en {ruta_destino}")
-            except shutil.SameFileError:
-                print(f"Error: {ruta_archivo_origen} y {ruta_destino} son el mismo archivo.")
-        else:
-            print(f"Error: {ruta_destino} ya existe.")
+# Obtén la lista de todas las subcarpetas dentro de la carpeta principal
+subcarpetas = [nombre for nombre in os.listdir(carpeta_principal) if os.path.isdir(os.path.join(carpeta_principal, nombre))]
+
+# Itera sobre cada subcarpeta y pega el archivo
+for subcarpeta in subcarpetas:
+    ruta_destino = os.path.join(carpeta_principal, subcarpeta, os.path.basename(archivo_origen))
+    shutil.copy(archivo_origen, ruta_destino)
+    print(f"Archivo copiado a {ruta_destino}.")
+
+print("Proceso completado.")
